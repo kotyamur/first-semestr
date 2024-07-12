@@ -1,0 +1,164 @@
+/* font-family */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* В кінці списку завжди вказується сімейство */
+/* sans-serif, monospace, serif */
+
+/* font-style */
+/* normal | italic | oblique | initial | inherit */
+.title {
+  font-style: italic;
+}
+
+/* font-weight */
+/* 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 */
+.title {
+  font-weight: 400;
+}
+
+.text {
+  font-weight: 700;
+}
+
+/* font-size */
+/* px, em, rem */
+/* по замовчуванню 16рх */
+.text {
+  font-size: 20px;
+}
+
+/* Оформлення тексту */
+
+/* text-decoration */
+/* none | underline | line-through | overline */
+.text > span {
+  text-decoration: line-through;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* text-transform -регістр символів у тексті */
+/* none | uppercase | lowercase | capitalize */
+.site-nav .link {
+  text-transform: uppercase;
+}
+
+/* text-align - вирівнюванням текстового вмісту елемента за горизонталлю */
+/* left | right | center | justify */
+.post-title {
+  text-align: center;
+  background-color: aqua;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+/* text-indent - відступ першого рядка блоку тексту */
+/* значення | відсотки | inherit */
+
+.post-text {
+  text-indent: 100px;
+}
+
+/* line-height - міжрядковий інтервал  */
+/* множник | значення | відсотки | normal | inherit*/
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: bisque;
+  line-height: 24px;
+  line-height: 150%;
+}
+
+/* letter-spacing - інтервал між символами */
+/* значення | normal | inherit */
+
+/* .post-title {
+  letter-spacing: 10px;
+} */
+
+/* .post-text {
+  letter-spacing: 5px;
+} */
+
+/* word-spacing - інтервал між словами */
+/* значення | normal | inherit */
+/* застосовуються досить рідко */
+
+/* text-shadow */
+/* <зміщ по x>, <зміщ по y>, <R розмиття>, <колір> */
+
+.title {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* .title {
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+} */
+
+/* white-space */
+/* форматуванням пробілів і перенесень тексту */
+/* normal | nowrap | pre | pre-wrap */
+
+/* Псевдоелементи тексту */
+
+/* елемент::first-letter */
+
+pre {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: #2a2a2a;
+  font-size: 16px;
+}
+
+pre::first-letter {
+  font-family: 'Tahoma', serif;
+  font-size: 32px;
+  color: #f44336;
+}
+
+/* ::selection */
+/* Управляє стилем виділення тексту елемента */
+
+pre::selection {
+  color: #ffffff;
+  background-color: #b53fa5;
+}
+
+/* vertical-align */
+
+.item {
+  display: inline;
+  background-color: #b53fa5;
+  vertical-align: bottom;
+}
+
+.item:nth-child(3) {
+  font-size: 24px;
+}
+
+.item:nth-child(4) {
+  font-size: 32px;
+}
+
+/* @font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Tangerine Bold'), local('Tangerine-Bold'),
+    url(https://fonts.gstatic.com/s/tangerine/v12/Iurd6Y5j_oScZZow4VO5srNZi5FNym499g.woff2)
+      format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+} */
