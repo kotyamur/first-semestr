@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Каскад стилів</h1>
+
+    <p>Каскадування - це механізм, який керує кінцевими значеннями властивостей елемента, якщо до нього застосовується кілька CSS-правил.</p>
+
+    <ul>
+        <li>Якщо до елемента застосовується кілька правил, їх властивості комбінуються</li>
+        <li>Якщо правила містять однакові властивості з різними значеннями, то вони конфліктують</li>
+    </ul>
+
+    <p>Для того щоб зібрати фінальні стилі елемента і вирішити конфлікти значень властивостей, браузер використовує два механізми: специфічність і наслідування.</p>
+
+    <h2>Специфічність селектора  (вагa)</h2>
+
+    <article class="post">
+        <h1 class="post-title" id="title">Lorem ipsum dolor sit amet</h1>
+        <!-- <p style="color: green;"> -->
+        <p class="post-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+            veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+            cumque fuga facere labore quo id necessitatibus quaerat rerum.
+        </p>
+        <a href="" class="post-link">Читати далі...</a>
+    </article>
+
+    <h2>Однакова специфічність</h2>
+    <p>Якщо специфічність однакова, перемагає правило, розташоване нижче в коді.</p>
+    <h2>Наслідування властивостей</h2>
+    <p>Наслідування - це механізм, за допомогою якого значення певних властивостей передаються від предка його нащадкам. Наслідуються переважно властивості оформлення тексту, наприклад колір.</p>
+
+    <p>В житті не всі атрибути батьків передаються дітям. Те саме і в CSS, що не кожна властивість за замовчуванням наслідується нащадками</p>
+
+    <h3>Винятки</h3>
+    <p>Не всі елементи наслідують значення властивостей від предків. Наприклад, посилання не наслідує колір тексту.</p>
+    <ul class="list">
+    <li class="list-item">
+      <a class="list-link">Посилання 1</a>
+    </li>
+    <li class="list-item">
+      <a class="list-link">Посилання 2</a>
+    </li>
+    <li class="list-item">
+      <a class="list-link">Посилання 3</a>
+    </li>
+  </ul>
+  <ul  class="list">
+    <li class="list-item">Lorem ipsum dolor sit.</li>
+    <li class="list-item">Minima incidunt ipsa deserunt.</li>
+    <li class="list-item">Voluptatem exercitationem totam magni.</li>
+    <li class="list-item">Laudantium unde quidem id?</li>
+    <li class="list-item">Ratione neque tempore vitae?</li>
+    <li class="list-item">Molestias illo fuga mollitia?</li>
+  </ul>
+  <form>
+    <div>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Password
+        <input type="password" name="pwd" minlength="5" maxlength="12" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Phone number
+        <input type="tel" name="phone" />
+      </label>
+    </div>
+    <button  type="submit" disabled> Submit</button>
+    <button  type="reset"> Reset</button>
+  </form>
+  <!-- <table>
+      <caption>
+          Таблиця розкладу шкільних занять
+      </caption>
+      <thead>
+          <tr>
+              <th>Понеділок</th>
+              <th>Вівторок</th>
+              <th>Середа</th>
+              <th>Четвер</th>
+              <th>П'ятниця</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Історія</td>
+              <td>Фізкультура</td>
+              <td>Інформатика</td>
+              <td>Правознавство</td>
+              <td>Математика</td>
+          </tr>
+          <tr>
+              <td>Фізика</td>
+              <td>Англійська</td>
+              <td>Фізкультура</td>
+              <td>Екологія</td>
+              <td>Історія</td>
+          </tr>
+          <tr>
+              <td>Українська</td>
+              <td>Хімія</td>
+              <td>Математика</td>
+              <td>Правознавство</td>
+              <td>Фізика</td>
+          </tr>
+          <tr>
+              <td>Інформатика</td>
+              <td>Англійська</td>
+              <td>Фізика</td>
+              <td>Хімія</td>
+              <td>Фізкультура</td>
+          </tr>
+      </tbody>
+    </table> -->
+    
+    <article class="post">
+        <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+        <ul><li>dfgfg</li></ul>
+        <p class="post-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi, veritatis nihil alias iste odit similique sit eius optio veniam, impedit cumque fuga facere labore quo id necessitatibus quaerat rerum.
+        </p>
+        <a href="#" class="post-link">Читати далі...</a>
+    </article>
+</body>
+</html>

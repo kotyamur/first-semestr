@@ -1,0 +1,321 @@
+/* Селектори 4-го рангу​ */
+
+/* Специфічність - 0 0 0 1 */
+
+p {
+  color: green;
+}
+
+/* ✅ Специфічність - 0 0 0 2 */
+
+article > p {
+  color: orange;
+}
+
+/* Селектори 3-го рангу​ */
+
+/* 1 variant */
+
+/* Специфічність - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+/* Специфічність - 0 0 1 1 */
+.post > h1 {
+  color: red;
+}
+/* ✅ Специфічність - 0 0 2 0 */
+.post > .post-title {
+  color: orange;
+}
+
+/* 2 variant */
+
+/* Специфічність - 0 0 0 1 */
+a {
+  color: green;
+}
+/* Специфічність - 0 0 1 0 */
+.post-link {
+  color: orange;
+}
+/* Специфічність - 0 0 1 1 */
+a.post-link {
+  color: blue;
+}
+/* Специфічність - 0 0 2 0 */
+.post > .post-link {
+  color: red;
+}
+/* ✅ Специфічність - 0 0 2 1 */
+.post > a.post-link {
+  color: brown;
+}
+
+
+/* Селектори 2-го рангу​ */
+
+h1 {
+    color: aquamarine;
+}
+
+/* Специфічність - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+/* ✅ Специфічність - 0 1 0 0 */
+#title {
+  color: orange;
+}
+
+
+/* Селектори 1-го рангу​ */
+
+
+/* Три селектори елемента з однаковою специфічністю */
+
+a {
+  color: teal;
+}
+a {
+  color: brown;
+}
+
+/* Оскільки це правило стоїть нижче, до всіх посилань застосується помаранчевий колір тексту */
+a {
+  color: orange;
+}
+
+/* каскадність приклад */
+.post > p {
+  color: blue;
+  background-color: rgb(64, 255, 0);
+  font-size: 24px;
+} 
+
+p {
+  color: teal;
+  font-size: 36px;
+}
+
+.post > .post-text {
+  color: #800013;
+}
+
+/* 1 */
+
+/* .post {
+  color: #13f403;
+}
+
+.post > h1 {
+  color: #13f403;
+}
+
+.post > p {
+  color: #1303f4;
+
+}
+
+.post > a {
+
+} */
+/* 2 */
+
+/* .post > .title {
+  color: #000;
+}
+
+.post > .text {
+  background-color: #bc03f4;
+} */
+
+/* 3 */
+
+/* .post-title {
+
+}
+
+.post-text {
+
+} */
+
+
+
+/* ПИТАННЯ різниця))*/
+/* .post > .post-text {
+    color: rgb(43, 194, 53);
+}
+.post .post-text {
+    color: rgb(43, 194, 53);
+}
+.post.post-text {
+    color: bisque;
+} */
+
+
+/* ПИТАННЯ каскадність */
+/* p {
+  color: blue;
+  background-color: orange;
+}
+
+p {
+  color: teal;
+} */
+
+
+/* НАСЛІДУВАННЯ */
+
+body {
+  color: #2a2a2a;
+  font-size: 24px;
+  background-color: white;
+}
+
+/* .list {
+  background-color: #bc03f4;
+  font-size: 16px;
+} */
+
+/* .list-item {
+  color: #13f403;
+} */
+
+.post-link {
+  /* font-size: inherit; */
+  color: currentColor;
+  /* color: inherit; */
+}
+
+/* ПСЕВДОКЛАСИ СТАНУ */
+
+/* селектор:псевдоклас {
+  ...
+} */
+
+.link {
+  color: #626262;
+}
+/* visited > hover > active */
+
+/* на посиланнях */
+.link:visited {
+  color: #f4033f;
+}
+
+/* до будь-яких селекторів */
+.link:hover {
+  color: #03A9F4;
+}
+
+.post-text:hover {
+  color: #13f403;
+}
+
+/* інтерактивний елемент 
+(посилання, кнопка, поле форми */
+.link:focus {
+  color: #1303f4;
+}
+
+/* практично будь-який елемент */
+.link:active {
+  color: #bc03f4;
+}
+p:active {
+  color: #bc03f4;
+}
+
+.link.current {
+  color: #bc03f4;
+}
+
+button {
+  background-color: #bc03f4;
+}
+
+button:hover {
+  background-color: #f403a0;
+}
+
+button:disabled {
+  background-color: #13f403;
+}
+
+form input:focus  {
+  background-color: #f4b803;
+}
+
+
+/* cursor */
+/* тип вказівника миші */
+.link {
+  cursor: pointer;
+}
+
+/* Структурні псевдокласи - 
+це спосіб вибрати певні елементи 
+з колекції дочірніх елементів */
+
+ /* ✅ Спрацює, .list-item - це колекція 
+ сусідів зі спільним батьком
+.list-item: структурний-псевдоклас {}
+
+ ❌ Не спрацює, .list-link - це НЕ колекція 
+ сусідів, у них відсутній спільний батько
+.list-link: структурний-псевдоклас {} */
+
+/* .list-item:last-child {
+  background-color: orange;
+} */
+
+/* .list-item:first-child {
+  background-color: orange;
+}
+.list-item:first-child:hover {
+  background-color: green;
+} */
+
+/* .list-item:not(:last-child) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(3) {
+  background-color: orange;
+} */
+
+/* парний */
+/* .list-item:nth-child(2n) {
+  background-color: orange;
+} */
+
+/* Аналогічно, використовуючи псевдонім */
+/* .list-item:nth-child(even) {
+  background-color: orange;
+} */
+
+/* непарний */
+/* .list-item:nth-child(2n + 1) {
+  background-color: orange;
+} */
+
+/* Аналогічно, використовуючи псевдонім */
+/* .list-item:nth-child(odd) {
+  background-color: orange;
+} */
+
+/* Від N-го елемент */
+/* .list-item:nth-child(n + 3) {
+  background-color: orange;
+} */
+
+/* До N-го елемента */
+/* .list-item:nth-child(-n + 3) {
+  background-color: orange;
+} */
+
+/* Кожен N-й елемент (кожний 3тій) */
+/* .list-item:nth-child(3n + 1) {
+  background-color: orange;
+} */
