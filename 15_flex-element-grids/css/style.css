@@ -1,0 +1,377 @@
+/*! global styles */
+:root {
+  --text-color: blue;
+  --main-text-size: 18px;
+
+}
+
+body {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-font-body);
+  background-color: var(--color-background-body);
+}
+
+a {
+  color: inherit;
+}
+
+.parent-list {
+  color: var(--text-color);
+  /* width: 200px; */
+  /* height: 600px; */
+
+  /* padding: 5px; */
+  display: flex;
+  /* flex-direction: column; */
+  
+
+  /* display: grid; */
+  /*? Три столбца шириной 100px каждый */
+  /* grid-template-columns: repeat(3, 100px);  */
+  /*? Три строчки высотой 100px каждый */
+  /* grid-template-rows: repeat(3, 100px);  */
+  /*? Расстояние между ячейками */
+  /* gap: 10px;  */
+
+  border: 10px solid rgb(71, 252, 255);
+  background-color: rgb(202, 132, 255);
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+
+  /* min-width: 100px; */
+  /* max-width: 300px; */
+  /* flex-basis: 200px; */
+
+  /* flex-grow: 1; */
+  /* flex-shrink: 4; */
+
+  border: 1px solid rgb(24, 0, 179);
+  background-color: #fefe55;
+}
+
+.item:nth-child(1) {
+  /* align-self: flex-start; */
+  /* flex-grow: 2; */
+  /* flex-shrink: 0; */
+  /* flex-shrink: 2; */
+  background-color: #aefc1e;
+}
+
+/*! Гумовий контент​ */
+.container {
+  display: flex;
+  gap: 8px;
+  max-width: 960px;
+  margin: 20px auto;
+  border: 2px solid blue;
+}
+
+.sidebar {
+  /* width: 200px; */
+  flex-basis: 200px;
+}
+
+.content {
+  /* flex-basis: 760px; */
+  flex-grow: 1;
+}
+
+.sidebar,
+.content {
+  height: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #e7ffba;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+/*! Футер картки​ */
+.container2 {
+  display: flex;
+  /* gap: 16px; */
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  outline: 2px solid green;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 320px; */
+  flex-basis: 320px;
+  margin: 8px;
+  padding: 10px;
+  background-color: #c7f0ff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.content2 {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px dashed tomato;
+  border-radius: 4px;
+}
+
+.meta {
+  padding: 10px;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
+}
+
+
+/*! flex-shrink: частка​ */
+.container3 {
+  width: 95vw;
+  width: 600px;
+  /* width: 400px; */
+  /* width: 800px; */
+  margin-top: 10px;
+  display: flex;
+  /* gap: 16px; */
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  outline: 2px solid red;
+}
+.square-one {
+  /* flex: flex-grow flex-shrink flex-basis */
+  /* flex: 2 1 300px; */
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 300px;
+  border: 2px solid blue;
+}
+.square-two {
+  /* flex: 1 2 300px; */
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 300px;
+  border: 2px solid green;
+}
+
+
+/*! align-self​ */
+.card3 {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fffdee;
+  border-radius: 4px;
+}
+.img-2 {
+  /* align-self: stretch; */
+  align-self: flex-start;
+  /* align-self: center; */
+  /* align-self: flex-end; */
+}
+
+/* order - 0 */
+
+.card-set1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  border: 10px solid tomato;
+  background-color: rgb(202, 132, 255);
+}
+
+.card-set1 > li{
+  height: 100px;
+  flex-basis: calc((100% - 20px) / 3);
+  outline: 1px solid rgb(24, 0, 179);
+  background-color: rgb(255, 255, 159);
+  font-size: 36px;
+}
+
+.set-item1 {
+  order: 1;
+}
+
+.set-item3 {
+  order: -1;
+}
+
+/*! Техніка grids — cітка елементів */
+.card-set {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+
+  /** grid */
+  /* display: grid; */
+  /* Три колонки шириной по 100px каждая */
+  /* grid-template-columns: 100px 100px 100px; */
+  /* grid-template-columns: calc((100% - 20px) / 3) calc((100% - 20px) / 3) calc((100% - 20px) / 3); */
+  /* Три строки высотой по 50px каждая */
+  /* grid-template-rows: 50px 50px 50px;  */
+  
+  /* Расстояние между элементами в сетке */
+  gap: 10px; 
+  /* column-gap: 60px; */
+  /* row-gap: 20px; */
+  
+  border: 10px solid tomato;
+  background-color: rgb(202, 132, 255);
+}
+
+
+.item3 {
+  height: 100px;
+  flex-basis: calc((100% - 30px*2) / 3);
+  flex-basis: calc((100% - 20px*3) / 4);
+  flex-basis: calc((100% - 20px) / 3);
+  outline: 1px solid rgb(24, 0, 179);
+  background-color: rgb(255, 255, 159);
+}
+
+
+/*! order​​​ (ДЗ-15.1)*/
+.holder2 {
+  margin: 20px auto;
+
+  /** var.1 */
+  /* width: 610px; */
+  /** var.2 */
+  width: 100%;
+
+  display: flex;
+
+  /** var.1 */
+  /* flex-wrap: wrap; */
+  /** var.2 */
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  
+  border: 5px solid black;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+}
+
+.item2 {
+  height: 150px;
+
+  /** var.1 */
+  /* flex-basis: 300px; */
+  /** var.2 */
+  /* flex-basis: 30%; */
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 3rem;
+  color: wheat;
+  text-shadow: 4px 4px 6px #212121;
+}
+
+.item2:nth-child(1) {
+  /** var.1 */
+  /* order: 1; */
+  /** var.2 */
+  order: 5;
+  background-color: red;
+  border-top-left-radius: 40px;
+  
+
+}
+.item2:nth-child(2) {
+  /** var.1 */
+  /* order: 4; */
+  /* max-width: 200px; */
+  /** var.2 */
+  order: 2;
+  background-color: skyblue;
+}
+.item2:nth-child(3) {
+  /** var.1 */
+  /* order: 3; */
+  /* max-width: 200px; */
+  /** var.2 */
+  order: 3;
+  background-color: darkviolet;
+  
+}
+.item2:nth-child(4) {
+  /** var.1 */
+  /* order: 5; */
+  /* max-width: 200px; */
+  /** var.2 */
+  order: 1;
+  background-color: green;
+}
+.item2:nth-child(5) {
+  /** var.1 */
+  /* order: 2; */
+  /** var.2 */
+  order: 4;
+  border-top-right-radius: 40px;
+  background-color: orange;
+  
+}
+
+
+
+/*?  order​​ (ДЗ-15.1 Шмідт Валерій) */
+.holder2s {
+  border: 1px solid #212121;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-bottom: 400px;
+}
+  .item2s {
+      /* text-align: center; */
+      flex-basis: 25%;
+      /* flex-shrink: 1; */
+      flex-grow: 1;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .item2s:nth-child(1) {
+      background-color: #fd644d;
+      order: 1;
+      flex-basis: 50%;
+      border-radius: 10px 0 0 0;
+  }
+  .item2s:nth-child(2) {
+      background-color: #4983b2;
+      order: 4;
+  }
+  .item2s:nth-child(3) {
+      background-color: #663797;
+      order: 3;
+  }
+  .item2s:nth-child(4) {
+      background-color: #0e7f12;
+      order: 5;
+  }
+  .item2s:nth-child(5) {
+      background-color: #fda429;
+      order: 2;
+      flex-basis: 50%;
+      border-radius: 0 10px 0 0;
+  }
