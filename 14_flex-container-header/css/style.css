@@ -1,0 +1,98 @@
+:root {
+  /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+  --color-font-body: #1f373d;
+  --color-background-body: #deffe8;
+  /* *============================================== */
+}
+
+/*! global styles */
+
+body {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-font-body);
+  background-color: var(--color-background-body);
+}
+
+a {
+  color: inherit;
+}
+
+/* header */
+header {
+  outline: 1px dashed blue;
+
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 35px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  /* margin-right: 50px; */
+  font-size: 25px;
+  font-weight: 600;
+
+  outline: 1px dashed blue;
+}
+
+/* nav-menu */
+nav {
+  width: 65%;
+  outline: 1px dashed blue;
+}
+.nav_menu {
+  width: 100%;
+  list-style: none;
+  
+  display: flex;
+  /* gap: 35px; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav_menu a,
+.join_block {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* .nav_menu_item {
+  margin-right: 30px;
+
+}
+.nav_menu_item:last-child {
+  margin-right: 0;
+} */
+
+/* .nav_menu_item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+/* join_block */
+
+.join {
+  border: none;
+  color: var(--color-font-body);
+  background: none;
+  transition: opacity .3s;
+}
+
+.started {
+  padding: 14px 25px 13px;
+  border: none;
+  border-radius: 6px;
+  color: var(--color-font-body);
+  background: #ffcc01;
+  transition: opacity .3s;
+}
+
+.join:hover,
+.started:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
