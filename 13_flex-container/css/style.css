@@ -1,0 +1,278 @@
+/*! Reset styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* font-family */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  padding: 20px;
+
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+  outline: solid tomato;
+}
+
+.post-thumb {
+  /* margin-bottom: 30px; */
+  border: 2px dashed tomato;
+}
+/* не можна задавати відступ дитині */
+.post-image {
+  margin-bottom: 30px;
+}
+
+.post-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border: 2px dashed teal;
+}
+
+.post-text {
+  margin-bottom: 0;
+  margin-top: 0;
+  border: 2px dashed blue;
+}
+
+/* margin-right */
+.boxx {
+  width: 240px;
+  height: 80px;
+}
+
+.indigo {
+  background-color: #3f51b5;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.amber {
+  background-color: #ffc107;
+}
+/* центрування */
+
+/* .boxx {
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.parent {
+  background-color: #3f51b5;
+}
+
+.child {
+  max-width: 220px;
+  margin: 0 auto;
+  background-color: #4caf50;
+  text-align: center;
+}
+
+.parent,
+.child {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* вертикальних полz */
+
+.text {
+  background-color: tomato;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 10px solid #2196f3;
+  border-right: 10px solid #2196f3;
+}
+
+.p {
+  border: 5px solid #212121;
+}
+
+/* Рядково-блокові */
+
+.link-new {
+  display: inline-block;
+  padding: 16px 32px;
+
+  border-radius: 3px;
+  background-color: teal;
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* флекс бокс */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid green;
+  background-color: rgb(255, 255, 159);
+}
+
+.higher {
+  height: 170px;
+}
+
+.box-parent-flex {
+  /* width: 200px; */
+  /* height: 600px; */
+
+  padding: 5px;
+  /* display: flex; */
+
+  /** flex-direction */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /** justify-content */
+  /* justify-content: center; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /** align-items */
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: baseline; */
+
+  /** flex-wrap */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /** align-content */
+  /** для багаторядкового контейнера */
+  /* align-content: stretch; */
+  /* align-content: center; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  
+  border: 1px solid tomato;
+  background-color: rgb(202, 132, 255);
+  margin-bottom: 10px;
+}
+
+
+
+.box-parent-inline-flex {
+  padding: 5px;
+  display: inline-flex;
+
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  border: 1px solid rgb(71, 218, 255);
+  background-color: rgb(255, 171, 171);
+  margin-bottom: 10px;
+}
+
+/* \\\\\\\\\\\\\\ */
+
+.page-header {
+  /*  Making header.page-header a Flex-container and aligning elements  */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: 10px; */
+  background-color: #607d8b;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  /* padding: 15px; */
+  /* border-radius: 4px; */
+  /* background-color: #ff5722; */
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  /* display: flex; */
+  /* gap: 8px; */
+  padding: 0;
+  /* padding: 15px; */
+  margin: 0;
+  list-style: none;
+  /* border-radius: 4px; */
+  /* background-color: #2196f3; */
+}
+
+.menu .link {
+  /* display: block; */
+  /* padding: 10px; */
+  /* border-radius: 4px; */
+  text-decoration: none;
+  color: black;
+  /* background-color: #fff; */
+}
+
+.menu .link:hover,
+.menu .link:focus,
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+
+.post-text {
+  height: 400px;
+  margin-top: 50px;
+}

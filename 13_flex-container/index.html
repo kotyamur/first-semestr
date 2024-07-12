@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1>Флекс бокс</h1>
+
+  <h2>Повторення</h2>
+
+  <p>??? відступи між сусідніми елементами це - </p>
+  <p>??? відступи між батьком та дитиною елементами це - </p>
+  <p>??? чи можна задавати марджин дитині, щоб відступити його батьком від сусіднього елемента? </p>
+
+  <article class="post">
+    <div class="post-thumb">
+      <img class="post-image" src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+        alt="Tabby cat in a funny sitting position" />
+    </div>
+    <h1 class="post-heading">All about cats</h1>
+    <p class="post-text">
+      Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+      voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+      laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+      perspiciatis aperiam error odit praesentium consequatur totam maiores.
+      Minus similique molestias, eveniet delectus eaque dignissimos! Id
+      deserunt magni doloremque, corrupti consectetur vero veniam!
+    </p>
+  </article>
+  
+  <h3>??? margin-right це - </h3>
+  <!-- margin-right -->
+
+  <div class="boxx indigo"></div>
+  <div class="boxx green"></div>
+  <div class="boxx amber"></div>
+
+  <h3>??? що краще margin-right: auto;
+    margin-left: auto; чи margin: 0 auto; </h3>
+  
+  <h3>Горизонтальне центрування блокових елементів</h3>
+  <!-- Горизонтальне центрування блокових елементів -->
+  
+  <p>Якщо задати автоматичні лівий і правий відступи, вільний простір розподіляється порівну між ними і блоковий елемент центрується.</p>
+  <div class="parent">
+    <p>Parent element</p>
+    <div class="child">Fixed width block-level child element</div>
+  </div>
+
+    
+   
+    <h2>Рядково-блокові елементи (inline-block)</h2>
+    <!-- Рядково-блокові -->
+    <p>Гібрид між блоковими і рядковим елементами, який взяв все найкраще від обох.</p>
+    <ul>
+      <li>Для них задана властивість display: inline-block.</li>
+      <li>Їх ширина і висота залежать від вмісту, але можна явно задати властивості width і height.</li>
+      <li>Вони розташовуються в рядку доти, доки в ньому є достатньо місця, після чого нові переносяться на наступний рядок.</li>
+      <li>Їм можна задавати будь-які властивості геометрії елемента: ширину, висоту, поля, рамки і відступи.</li>
+    </ul>
+    <p>Вони використовуються у тих випадках, коли рядковим елементам потрібно додати декоративні ефекти.</p>
+    <a href="" class="link-new">Дізнатися більше</a>
+
+    <span class="text">Inline element</span>
+    <span class="text">Inline element</span>
+
+    <h2>Повторення матеріалу - макет Фотоблог</h2>
+
+    <!-- флекс-бокс -->
+    <div class="box-parent-flex">
+      <div class="box">box-flex-1</div>
+      <div class="box higher">box-flex-2</div>
+      <div class="box">box-flex-3</div>
+
+      <div class="box">box-flex-4</div>
+      <div class="box">box-flex-5</div>
+      <div class="box">box-flex-6</div>
+      <div class="box">box-flex-7</div>
+      <div class="box">box-flex-8</div>
+      <div class="box">box-flex-9</div>
+    </div>
+
+    <!-- <div class="box-parent-inline-flex">
+        <div class="box">box-inline-flex-1</div>
+        <div class="box">box-inline-flex-2</div>
+        <div class="box">box-inline-flex-3</div>
+    </div> -->
+
+    <!-- крайня геометрія -->
+    <h2>Чистимо крайню геометрію</h2>
+    <!-- Вебстудія  - розширення посилань в хедері -->
+    <h2>Вебстудія  - розширення посилань в хедері</h2>
+
+    <header class="page-header">
+      <a href="" class="logo">Логотип</a>
+    
+      <ul class="menu">
+        <li class="item"><a href="" class="link">Головна</a></li>
+        <li class="item"><a href="" class="link">Блог</a></li>
+        <li class="item"><a href="" class="link">Підкасти</a></li>
+        <li class="item"><a href="" class="link">Контакти</a></li>
+      </ul>
+    </header>
+
+    <p class="post-text">
+      Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+      voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+      laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+      perspiciatis aperiam error odit praesentium consequatur totam maiores.
+      Minus similique molestias, eveniet delectus eaque dignissimos! Id
+      deserunt magni doloremque, corrupti consectetur vero veniam!
+    </p>
+
+</body>
+
+</html>
