@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Блокова модель</h1>
+
+    <h2>Вбудовані стилі браузера. Нормалізація стилів</h2>
+    <p>
+      Ми хочемо, щоб HTML-елементи виглядали однаково, незалежно від браузера.
+      На жаль, це не так, в різних браузерах елементи можуть виглядати дещо
+      інакше. Коли браузер відображає веб-сторінку, спочатку застосовується його
+      базова таблиця стилів (user agent stylesheet), значення властивостей в
+      якій можуть відрізнятися від таблиць стилів інших браузерів. Це і
+      призводить до невеликих відмінностей у зовнішньому вигляді елементів.
+    </p>
+    <p>
+      Нормалізація стилів - це спроба вирішити цю проблему, шляхом підключення
+      ще одного файлу стилів, в якому виправлені всі можливі розбіжності між
+      таблицями стилів браузерів. Тобто це техніка поліпшення кросбраузерності
+      веб-сторінки - однакового відображення і роботи сайту в різних браузерах.
+    </p>
+    <a href="https://cdnjs.com/libraries/modern-normalize">modern-normalize</a>
+
+    <h2>Блокова модель</h2>
+    <p>
+      У блокової моделі будь-який елемент - це прямокутний контейнер, незалежно
+      від того, як він візуально представлений на сторінці. В елемента є область
+      вмісту і необов'язкові поля, відступи і рамка (межа).
+    </p>
+    <img
+      src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/box-model.png"
+      width="600"
+    />
+    <p>
+      <a href="https://codepen.io/goit-academy/pen/VwjLgeR" class="link">
+        Приклад блокової моделі.</a
+      >
+    </p>
+    <p class="text">
+      This is the content of an element, such as text, image, video, or nested
+      elements. By default, the height of the content area is determined by the
+      content, and the width is determined by the element type.
+    </p>
+    <p>
+      Для деяких елементів в таблиці стилів браузера встановлені розміри полів і
+      відступів за замовчуванням. Наприклад списків, абзаців, заголовків тощо.
+      Це було необхідно для того, щоб текстовий контент сторінки виглядав
+      однаково без додаткового оформлення.
+    </p>
+
+    <h2>Властивості width і height</h2>
+
+    <ul>
+      <li>
+        Не ставте елементам фіксовану висоту, нехай вона визначається контентом.
+        Точно встановлена висота призводить до проблеми переповнення, коли
+        контенту більше, ніж елемент може вмістити.
+      </li>
+      <li>
+        Більшості елементів задається тільки ширина. Вказувати одночасно width і
+        height варто тільки декоративним елементам з фіксованим розміром,
+        наприклад іконкам.
+      </li>
+      <li>
+        Ширину можна задавати не тільки в px, em або rem, але й у відсотках. У
+        такому разі ширина блоку буде розрахована як відсоток від ширини батька.
+        Детальніше про це при побудові сіток.
+      </li>
+    </ul>
+
+    <div class="box"></div>
+    <p>
+      Фінальна ширина и висота блоку div.box буде 220px, а не 150px, як
+      зазначено у властивостях width і height. Справа в тому, що існує декілька
+      типів блокової моделі, які відрізняються формулою розрахунку розміру
+      елемента.
+    </p>
+
+    <h3>Властивість box-sizing</h3>
+
+    <img
+      src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/content-box-width.png"
+      width="300"
+    />
+    <img
+      src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/border-box-width.png"
+      width="300"
+    />
+
+    <p>
+      Стандартна блокова модель в сучасних проектах - це border-box. Для того
+      щоб не ставити властивість box-sizing кожному елементу окремо, на самому
+      початку файлу стилів використовується наступний CSS-код.
+    </p>
+    <pre>
+      <code>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+      </code>
+    </pre>
+
+    <h2>Геометрія елемента</h2>
+    <p>
+      В геометрії елемента є 4 сторони: верх (top), право (right), низ (bottom)
+      і ліво (left). Саме в такому порядку за годинниковою стрілкою, починаючи
+      зверху, задаються значення збірних властивостей padding, margin і border.
+    </p>
+    <img
+      src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/padding.png"
+      width="300"
+    />
+
+    <p>
+      Поля (падінги) використовуються для декоративних ефектів. Наприклад, для
+      створення вільного простору між рамкою елемента і його контентом, як в
+      прикладі. Якщо не поставити падінг, то текст буде негарно прилягати до
+      межі абзацу.
+    </p>
+
+    <p class="text2">
+      Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+      voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+      laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+      perspiciatis aperiam error odit praesentium consequatur totam maiores.
+      Minus similique molestias, eveniet delectus eaque dignissimos! Id deserunt
+      magni doloremque, corrupti consectetur vero!
+    </p>
+
+    <p>
+      Зовнішні відступи використовуються для створення проміжку між двома
+      сусідніми елементами. У прикладі у кожного елемента картки є
+      різнокольорова рамка, тому видно, що між ними є відступи.
+    </p>
+
+    <article class="post">
+      <div class="post-thumb">
+        <img
+          class="post-image"
+          src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+          alt="Tabby cat in a funny sitting position"
+        />
+      </div>
+      <h1 class="post-heading">All about cats</h1>
+      <p class="post-text">
+        Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+        voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+        laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+        perspiciatis aperiam error odit praesentium consequatur totam maiores.
+        Minus similique molestias, eveniet delectus eaque dignissimos! Id
+        deserunt magni doloremque, corrupti consectetur vero veniam!
+      </p>
+    </article>
+
+    <h2>Схлопування вертикальних відступів</h2>
+    <div class="box top"></div>
+    <div class="box bottom"></div>
+
+    <h2>Випадання вертикальних відступів</h2>
+    <div class="outer-box">
+      <div class="inner-box"></div>
+    </div>
+
+    <h2>Властивість border</h2>
+    <code>border: ширина стиль колір;</code>
+    <pre>
+      <code>border-width: ширина;
+          border-style: стиль;
+          border-color: колір;</code>
+    </pre>
+  </body>
+</html>

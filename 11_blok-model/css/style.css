@@ -1,0 +1,182 @@
+/*! Reset styles */
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+/* body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* font-family */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.text {
+  border: 5px dashed #2196F3;
+  padding: 15px;
+  /* padding: 20px 10px; */
+  /* padding: 20px 10px 30px; */
+  /* padding: 20px 10px 30px 40px; */
+  /* margin: 20px; */
+  /* margin: 0px 0px 20px 0px; */
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 10px;
+  outline: 1px solid #f44336;
+  background-color: aqua;
+}
+
+/* .box {
+  width: 150px;
+  height: 150px;
+
+  border: 5px solid #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+} */
+
+.text2 {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px dashed #212121;
+}
+
+.text3 {
+  /* Однакові поля по 20px з усіх сторін */
+padding: 20px;
+
+/* Поля зверху і знизу по 10px, зліва і справа по 20px */
+padding: 10px 20px;
+
+/* Поле зверху 10px, зліва і справа по 20px, знизу 5px */
+padding: 10px 20px 5px;
+
+/* Поле зверху 10px, справа 15px, знизу 20px, зліва 25px */
+padding: 10px 15px 20px 25px;
+
+padding-top: 20px;
+padding-right: 10px;
+padding-bottom: 15px;
+padding-left: 30px;
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  padding: 20px;
+
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+}
+
+.post-thumb {
+  margin-bottom: 30px;
+  border: 2px dashed tomato;
+}
+
+.post-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  border: 2px dashed teal;
+}
+
+.post-text {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  border: 2px dashed blue;
+}
+
+/* Схлопування вертикальних відступів */
+
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top {
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+.bottom {
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Випадання вертикальних відступів */
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Властивість border */
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  border: 5px solid tomato;
+  border-radius: 10px;
+} */
+
+/* .box {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: blue;
+
+  border-right-width: 5px;
+  border-right-style: dotted;
+  border-right-color: black;
+
+  border-bottom-width: 7px;
+  border-bottom-style: dashed;
+  border-bottom-color: palevioletred;
+
+  border-left-width: 9px;
+  border-left-style: dashed;
+  border-left-color: green;
+} */
+
+/* vertical-align */
