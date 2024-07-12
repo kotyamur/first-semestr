@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1>Центрування Контенту</h1>
+
+  <h2>Повторення</h2>
+
+  <pre>
+      <code>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+      </code>
+    </pre>
+
+  <article class="post">
+    <div class="post-thumb">
+      <img class="post-image" src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+        alt="Tabby cat in a funny sitting position" />
+    </div>
+    <h1 class="post-heading">All about cats</h1>
+    <p class="post-text">
+      Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+      voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+      laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+      perspiciatis aperiam error odit praesentium consequatur totam maiores.
+      Minus similique molestias, eveniet delectus eaque dignissimos! Id
+      deserunt magni doloremque, corrupti consectetur vero veniam!
+    </p>
+  </article>
+
+  <h2>Схлопування вертикальних відступів</h2>
+  <div class="box top"></div>
+  <div class="box bottom"></div>
+
+  <h2>Випадання вертикальних відступів</h2>
+  <div class="outer-box">
+    <div class="inner-box"></div>
+  </div>
+
+  <h2>Властивість border</h2>
+  <div class="box">
+    <code>border: ширина стиль колір;</code>
+    <pre>
+        <code>
+          border-width: ширина;
+          border-style: стиль;
+          border-color: колір;
+        </code>
+      </pre>
+  </div>
+
+
+  <h2>Типи тегів - властивість display</h2>
+  <p>
+    Властивість display - як елемент буде показаний в документі. 
+  </p>
+  
+  <img src="https://3627081962-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCfIFPbrZmUph3TQc9gp3%2Fuploads%2F4T6OSrJ3NjG4gPLSfCTx%2F14.png?alt=media" width="500" />
+  <p>
+     Поведінка елемента визначається його типом. Найпоширеніші типи - це блокові (block) і рядкові (inline) елементи.
+    Крім цього, існує певна кількість додаткових типів, наприклад рядково-блокові (Inline-block) елементи.
+  </p>
+  <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/box-types.png" width="600" />
+  <p>
+    <a href="https://htmlreference.io/" class="link">
+      Довідник тегів.</a>
+  </p>
+  <h3>Блокові елементи (block)</h3>
+  <p>Візуально - це прямокутні області, що йдуть одна за одною зверху вниз.</p>
+  <ul>
+    <li>Для них задана властивість display: block.</li>
+    <li>Вони займають всю доступну ширину рядка (простір за горизонталлю) всередині батька.</li>
+    <li>Їх висота визначається вмістом, якщо явно не задана у властивості height.</li>
+    <li>Вони завжди починаються з нового рядка, тому кілька сусідніх блокових елементів розташовані вертикально один під
+      одним.</li>
+    <li>Їм можна задавати будь-які властивості геометрії елемента: ширину, висоту, поля, рамки і відступи.</li>
+  </ul>
+  
+  <h3>margin-right</h3>
+  <!-- margin-right -->
+  <p>Навіть якщо ширина блокових елементів задана явно, вони все одно будуть розташовуватися вертикально один під одним.
+    Все вільне місце в рядку за замовчуванням займається автоматичним правим відступом (margin-right) елемента</p>
+  <div class="boxx indigo"></div>
+  <div class="boxx green"></div>
+  <div class="boxx amber"></div>
+
+  
+  <h3>Горизонтальне центрування блокових елементів</h3>
+  <!-- Горизонтальне центрування блокових елементів -->
+  <p>Блоковий елемент можна горизонтально центрувати всередині його батька, у разі, коли ширина батька більша за ширину центрованого елемента. Тобто блоковому елементу задана фіксована ширина.</p>
+  <p>Якщо задати автоматичні лівий і правий відступи, вільний простір розподіляється порівну між ними і блоковий елемент центрується.</p>
+  <div class="parent">
+    <p>Parent element</p>
+    <div class="child">Fixed width block-level child element</div>
+  </div>
+
+  <h3>Елемент-контейнер</h3>
+  <!-- Елемент-контейнер -->
+  <p>Контейнер, обгортка, враппер, центрувальник - все це імена стандартного блокового елемента-контейнера для обмеження ширини і центрування контенту сторінки.</p>
+  <p>В CSS створюється клас container, який можна задати будь-якому елементу, але на практиці це завжди буде несемантичний <div>. Контейнеру обов'язково встановлюється ширина (фіксована або адаптивна), відповідно до сітки з макету, автоматичні горизонтальні відступи і необов'язкові поля, також за макетом.</p>
+    <p>приклад</p>
+
+    <header class="page-header">
+      <div class="container">
+        <p>Page header</p>
+      </div>
+    </header>
+    
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Hero section with CTA button etc.</h1>
+        </div>
+      </section>
+    
+      <section class="about">
+        <div class="container">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos debitis ipsum minus recusandae saepe voluptatem sunt neque eaque ad, facilis consequatur porro excepturi, nulla corrupti consequuntur voluptates? Consectetur expedita eaque voluptate inventore possimus sit. Nesciunt commodi ut vitae at similique vero harum amet eos? Sit adipisci deserunt nam libero?</p>
+        </div>
+      </section>
+    
+      <section class="features">
+        <div class="container">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos debitis ipsum minus recusandae saepe voluptatem sunt neque eaque ad, facilis consequatur porro excepturi, nulla corrupti consequuntur voluptates? Consectetur expedita eaque voluptate inventore possimus sit. Nesciunt commodi ut vitae at similique vero harum amet eos? Sit adipisci deserunt nam libero?</p>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="container">
+        <p>Page footer</p>
+      </div>
+    </footer>
+
+    <h2>Рядкові елементи (inline)</h2>
+    <!-- Рядкові елементи -->
+    <p>Візуально розташовуються в одному рядку один за одним доти, доки в ньому вистачає місця, після чого почнуть перестрибувати на наступний рядок і заповнювати його.</p>
+    <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-05/inline-elements.png" width="600" />
+    <ul>
+      <li>Для них задана властивість display: inline.</li>
+      <li>Їх ширина і висота залежать тільки від вмісту, явно задати їх не можна. Тобто властивості width і height не мають жодного ефекту.</li>
+      <li>Вони розташовуються в рядку доти, доки в ньому є достатньо місця, після чого нові переносяться на наступний рядок.</li>
+      <li>Їм можна задавати тільки горизонтальну геометрію: ліві і праві поля, відступи і рамки. Тобто вони ігнорують значення верхніх і нижніх margin, padding і border.</li>
+    </ul>
+
+    <a class="link" href="">Посилання<span class="text">your link</span></a>
+
+    <h3>Проміжок у рядкових елементів</h3>
+    <p>У рядкових і рядково-блокових елементів є правий або, у разі зображень, нижній проміжок. Це не margin або padding, а буквально порожнє місце - особливість того, як браузер розташовує рядковий контент в рядку.</p>
+    <a class="link" href="">Посилання</a>
+    <a class="link" href="">Посилання</a>
+    <a class="link" href="">Посилання</a>
+    <a class="link" href="">Посилання</a>
+    <p> за замовчуванням буде проміжок 4px - 1/4 розміру шрифту найближчого предка</p>
+    <!-- як прибрати нижній проміжок у зображення -->
+    <div class="card">
+      <img class="card-image" src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320" alt="A cat">
+      <h2 class="card-heading">Card title 1</h2>
+    </div>
+    <h3>Особливості вертикальних полів і рамок</h3>
+    <!-- Особливості вертикальних полів і рамок -->
+    <p>Верхні і нижні поля, а також рамки рядкового елемента працюють дуже дивно - не збільшують розмір блоку, але візуально відображаються</p>
+    <p class="p">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quaerat
+      eaque id voluptate reiciendis beatae vel nulla, doloremque dolore eum nobis
+      qui, laudantium dignissimos saepe. Possimus, nisi itaque? Fugiat facilis saepe
+      quo et architecto voluptatem blanditiis.
+    </p>
+    
+    <span class="textr">Inline element</span>
+    <span class="textr">Inline element</span>
+    
+    <p class="p">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quaerat
+      eaque id voluptate reiciendis beatae vel nulla, doloremque dolore eum nobis
+      qui, laudantium dignissimos saepe. Possimus, nisi itaque? Fugiat facilis saepe
+      quo et architecto voluptatem blanditiis.
+    </p>
+
+    <h2>Рядково-блокові елементи (inline-block)</h2>
+    <!-- Рядково-блокові -->
+    <p>Гібрид між блоковими і рядковим елементами, який взяв все найкраще від обох.</p>
+    <ul>
+      <li>Для них задана властивість display: inline-block.</li>
+      <li>Їх ширина і висота залежать від вмісту, але можна явно задати властивості width і height.</li>
+      <li>Вони розташовуються в рядку доти, доки в ньому є достатньо місця, після чого нові переносяться на наступний рядок.</li>
+      <li>Їм можна задавати будь-які властивості геометрії елемента: ширину, висоту, поля, рамки і відступи.</li>
+    </ul>
+    <p>Вони використовуються у тих випадках, коли рядковим елементам потрібно додати декоративні ефекти.</p>
+    <a href="" class="link-new">Дізнатися більше</a>
+
+    <h2>Ховаємо елементи</h2>
+    <!-- Ховаємо елементи -->
+    <p>Значення display: none дозволяє повністю приховати елемент, звільнивши його простір для інших. Такий елемент вилучається з потоку документа, візуально ховається і не бере участі у розмітці сторінки.</p>
+    <a href="https://codepen.io/goit-academy/pen/NWrGyYb" class="link-new" target="_blank">Дізнатися більше</a>
+</body>
+
+</html>

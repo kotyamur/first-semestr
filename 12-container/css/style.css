@@ -1,0 +1,296 @@
+/*! Reset styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* font-family */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  padding: 20px;
+
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+  outline: solid tomato;
+}
+
+.post-thumb {
+  margin-bottom: 30px;
+  border: 2px dashed tomato;
+}
+
+.post-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 2px dashed teal;
+}
+
+.post-text {
+  margin-bottom: 0;
+  margin-top: 0;
+  border: 2px dashed blue;
+}
+
+/* Схлопування вертикальних відступів */
+
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top {
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+.bottom {
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Випадання вертикальних відступів */
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Властивість border */
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  border: 5px solid tomato;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: blue;
+} */
+
+/* .box {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: blue;
+
+  border-right-width: 5px;
+  border-right-style: dotted;
+  border-right-color: black;
+
+  border-bottom-width: 7px;
+  border-bottom-style: dashed;
+  border-bottom-color: palevioletred;
+
+  border-left-width: 9px;
+  border-left-style: dashed;
+  border-left-color: green;
+} */
+
+
+/* margin-right */
+.boxx {
+  width: 240px;
+  height: 80px;
+}
+
+.indigo {
+  background-color: #3f51b5;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.amber {
+  background-color: #ffc107;
+}
+/* центрування */
+
+/* .boxx {
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.parent {
+  background-color: #3f51b5;
+}
+
+.child {
+  max-width: 220px;
+  margin: 0 auto;
+  background-color: #4caf50;
+  text-align: center;
+}
+
+.parent,
+.child {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Елемент-контейнер */
+
+/* h1,
+h2,
+p {
+  margin: 0;
+} */
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+  outline: 2px dashed #f44336;
+}
+
+.page-header,
+.page-footer,
+.hero,
+.about,
+.features {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header {
+  background-color: #e0e0e0;
+}
+
+.hero {
+  background-color: #4caf50;
+}
+
+.about {
+  background-color: #ffc107;
+}
+
+.features {
+  background-color: #2196f3;
+}
+
+.page-footer {
+  background-color: #90a4ae;
+}
+
+
+/* Рядкові елементи */
+.text {
+  background-color: tomato;
+  color: white;
+
+  /* ✅ Працює */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  /* ❌ Жодного ефекту */
+  width: 1000px;
+  height: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* проміжок у зображення */
+.card {
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f44336;
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.card-heading {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+}
+
+/* вертикальних полz */
+
+.textr {
+  background-color: tomato;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 10px solid #2196f3;
+  border-right: 10px solid #2196f3;
+
+  /* Let's give the inline <span> element the top
+      and bottom margins, and borders that don't work.   */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 10px solid #2196f3;
+  border-bottom: 10px solid #2196f3;
+}
+
+
+.p {
+  border: 5px solid #212121;
+}
+
+/* Рядково-блокові */
+
+.link-new {
+  display: inline-block;
+  padding: 16px 32px;
+
+  border-radius: 3px;
+  background-color: teal;
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
