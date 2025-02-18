@@ -17,425 +17,468 @@
   <body>
     <h1>Види та групи тегів</h1>
 
+
     <h2>Теги верхнього рівня</h2>
-        <p>html, head, body</p>
+    <p>html, head, body</p>
 
-    <h2>Службові теги</h2>        
-        <!-- Містять здебільшого інформацію для браузерів та пошукових систем -->
-        <p>head, meta, title</p>
 
-    <h2>Теги групування контенту</h2> 
-        <!-- <div> - універсальний блок, немає семантичного значення -->
-        <!-- сайт розетка-->
-        <p>div, header, main, footer, section, article, aside</p>
+    <h2>Службові теги</h2>
+    <!-- Містять здебільшого інформацію для браузерів та пошукових систем -->
+    <p>head, meta, title</p>
 
-        <!-- <article> Незалежна, відокремлювана, і така, що має самостійне значення, частина документа. 
+
+    <h2>Теги групування контенту</h2>
+    <!-- <div> - універсальний блок, немає семантичного значення -->
+    <!-- сайт розетка-->
+    <p>div, header, main, footer, section, article, aside</p>
+
+    <!-- <article> Незалежна, відокремлювана, і така, що має самостійне значення, частина документа. 
         Наприклад пост на форумі, стаття в блозі, віджет з рекламою, картка товару в магазині. 
         Якщо розділу документа можна дати назву, винести його за межі сайту 
         і він буде мати смислове значення. Обов'язковий заголовок.-->
 
-            <h3>Тег Article</h3>
+    <h3>Тег Article</h3>
 
-            <article style="width: 400px; border: 1px solid brown; text-align: center;">
-                <h4>Солодкий пиріжок</h4>
-                <img 
-                    src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="пиріжок" 
-                    width="200px"/>
-                <p>
-                    Дуже смачний печений пиріжок з різними наповнювачами: вишнею, персиком
-                    сливою або полуницею.
-                </p>
-                <p>Ціна: 50 кредитів</p>
-            </article>
+    <article style="width: 400px; border: 1px solid brown; text-align: center">
+      <h4>Солодкий пиріжок</h4>
+      <img
+        src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="пиріжок"
+        width="200px"
+      />
+      <p>
+        Дуже смачний печений пиріжок з різними наповнювачами: вишнею, персиком
+        сливою або полуницею.
+      </p>
+      <p>Ціна: 50 кредитів</p>
+    </article>
 
-        <!-- <section> - Не відокремлюється від основного документа. 
+    <!-- <section> - Не відокремлюється від основного документа. 
             Секція списку товарів, блок особистої інформації в профілі користувача, розділ контактної інформації. -->
 
-    <h2>Текстові елементи</h2> 
 
-        <h3>Заголовки</h3>
-        <!-- <h1> ... <h6> визначають текстові заголовки смислових розділів різного рівня, ієрархія!!! -->
-        <!-- Не визначайте рівень заголовка за розміром тексту на макеті!!!  -->
-        <p>Використовуються заголовки від 1 до 6</p>
+    <h2>Текстові елементи</h2>
 
-        <h3>Абзаци та засоби переносу тексту на новий рядок</h3>   
-        <!-- <p> — абзац; <br> — перехід на новий рядок; <hr> — розділювач тесту (лінія). -->
+    <h3>Заголовки</h3>
+    <!-- <h1> ... <h6> визначають текстові заголовки смислових розділів різного рівня, ієрархія!!! -->
+    <!-- Не визначайте рівень заголовка за розміром тексту на макеті!!!  -->
+    <p>Використовуються заголовки від 1 до 6</p>
 
-            <h4>Тег абзацу <b>p</b></h4>
+    <h3>Абзаци та засоби переносу тексту на новий рядок</h3>
+    <!-- <p> — абзац; <br> — перехід на новий рядок; <hr> — розділювач тесту (лінія). -->
 
-            <!-- тег <p> — універсальний контейнер для групування дрібних фразових елементів -->
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam iusto, velit obcaecati accusantium harum eius sint repellendus dolore qui sunt quisquam ipsam officiis, quibusdam dignissimos temporibus fugiat? Alias, accusantium.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam iusto, velit obcaecati accusantium harum eius sint repellendus dolore qui sunt quisquam ipsam officiis, quibusdam dignissimos temporibus fugiat? Alias, accusantium.
-                
-                </p>
+    <h4>Тег абзацу <b>p</b></h4>
 
-            <h4>Тег перенесення рядка <b>br</b></h4>    
-            <!-- <br> - для розмітки масиву тексту з примусовими перенесеннями рядків 
-                не використовується, щоб примусово додати розриви рядка між тегами або розбити масив тексту на абзаци-->
-                <p>
-                Wyatt resteth here, <br>цей текс було перенесено за допомогою <b>br</b>
-                </p>
-                
-                <p>
-                Wyatt resteth here, that quick could never rest;
-                </p>
+    <!-- тег <p> — універсальний контейнер для групування дрібних фразових елементів -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam
+      iusto, velit obcaecati accusantium harum eius sint repellendus dolore qui
+      sunt quisquam ipsam officiis, quibusdam dignissimos temporibus fugiat?
+      Alias, accusantium.
+    </p>
 
-            <h4>Тег розділювач тесту <b>hr</b></h4>     
+    <h4>Тег перенесення рядка <b>br</b></h4>
+    <!-- <br> - для розмітки масиву тексту з примусовими перенесеннями рядків 
+    не використовується, щоб примусово додати розриви рядка між тегами або розбити масив тексту на абзаци-->
+    <p>
+      Wyatt resteth here, <br />цей текс було перенесено за допомогою <b>br</b>
+    </p>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque voluptatum quam dolorum laudantium, ea ab cum magni provident fugiat possimus dignissimos maiores saepe impedit inventore iusto vero quisquam nihil.
-                </p>
-                <hr> 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque voluptatum quam dolorum laudantium, ea ab cum magni provident fugiat possimus dignissimos maiores saepe impedit inventore iusto vero quisquam nihil.
-                </p>   
+    <p>Wyatt resteth here, that quick could never rest;</p>
 
-        <h3>Теги форматування тексту</h3>             
-        <!-- форматування тексту: <b>, <i>, <sub>, <sup>, <span>... -->
+    <h4>Тег розділювач тесту <b>hr</b></h4>
 
-            <h4>Тег для додаткової стилізації <b>span</b></h4>  
-            <!-- <span>​ - універсальний контейнер для дрібного текстового контенту, немає семантичного значення -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque
+      voluptatum quam dolorum laudantium, ea ab cum magni provident fugiat
+      possimus dignissimos maiores saepe impedit inventore iusto vero quisquam
+      nihil.
+    </p>
+    <hr />
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque
+      voluptatum quam dolorum laudantium, ea ab cum magni provident fugiat
+      possimus dignissimos maiores saepe impedit inventore iusto vero quisquam
+      nihil.
+    </p>
 
-                <p>
-                    Wyatt resteth <span style="background-color: cadetblue;">here</span> , that quick could never rest;
-                </p>
+    <h3>Теги форматування тексту</h3>
+    <!-- форматування тексту: <b>, <i>, <sub>, <sup>, <span>... -->
 
-            <h4>Теги strong і b​ </h4>     
-            <!-- Теги <strong> і <b>​ використовуються для виділення важливого слова або цілої фрази  -->
+    <h4>Тег для додаткової стилізації <b>span</b></h4>
+    <!-- <span>​ - універсальний контейнер для дрібного текстового контенту, немає семантичного значення -->
 
-                <p>
-                    Тег <b>b (скорочено від bold)</b> робить текст тільки візуально жирним, звернення уваги лише на текст.
-                </p>
-                
-                <p>
-                    Тег <strong>strong семантично підкреслює текст</strong> як важливий, скрінрідер виділить інтонацією.
-                </p>
-                    
-            <h4>Теги em та i​ </h4>  
-            <!-- Теги <em> і <i>​ використовуються для акцентування уваги на частини тексту -->
+    <p>
+      Wyatt resteth <span style="background-color: cadetblue">here</span> , that
+      quick could never rest;
+    </p>
 
-                <p>
-                    Тег <i>i (скорочено від italic)</i> робить текст тільки візуально курсивним.
-                </p>
-                
-                <p>
-                    Тег <em>em</em> (скорочено від emphasis) <em>семантично</em> виділяє текст, робить акцент.
-                </p>
+    <h4>Теги strong і b​</h4>
+    <!-- Теги <strong> і <b>​ використовуються для виділення важливого слова або цілої фрази  -->
 
-                <p>Я <em>в повному захваті</em>, коли затримую зарплату!</p>
+    <p>
+      Тег <b>b (скорочено від bold)</b> робить текст тільки візуально жирним,
+      звернення уваги лише на текст.
+    </p>
 
-            <h4>Теги sup і sub</h4> 
-            <!-- відображення символів у верхньому (superscript) і нижньому (subscript) індексі.-->
-            <!--  Для розмітки нескладних математичних чи хімічних формул.  -->
+    <p>
+      Тег <strong>strong семантично підкреслює текст</strong> як важливий,
+      скрінрідер виділить інтонацією.
+    </p>
 
-                <p>Formula of water  - <b>H<sub>2</sub>O</b></p>
-                <p>Total area of the room - <b>150м<sup>2</sup></b></p>
-                <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>  
-                <p>C<sub>2</sub>H<sub>5</sub>OH</p>  
-                <p>H<sub>3</sub>PO<sub>4</sub></p>   
-                <b>a<sup>2</sup>+b<sup>2</sup>= c <sup>2</sup></b></p> 
+    <h4>Теги em та i​</h4>
+    <!-- Теги <em> і <i>​ використовуються для акцентування уваги на частини тексту -->
 
-            <h4>Теги для введення комп'ютерного коду</h4> 
-            <p>code, kbd, samp, var, pre</p>
+    <p>
+      Тег <i>i (скорочено від italic)</i> робить текст тільки візуально
+      курсивним.
+    </p>
 
-                <!-- <pre> За замовчуванням браузер ігнорує перенесення рядків -->
+    <p>
+      Тег <em>em</em> (скорочено від emphasis) <em>семантично</em> виділяє
+      текст, робить акцент.
+    </p>
 
-                    <pre>
+    <p>Я <em>в повному захваті</em>, коли затримую зарплату!</p>
+
+    <h4>Теги sup і sub</h4>
+    <!-- відображення символів у верхньому (superscript) і нижньому (subscript) індексі.-->
+    <!--  Для розмітки нескладних математичних чи хімічних формул.  -->
+
+    <p>
+        Formula of water - 
+        <b>H<sub>2</sub>O</b>
+    </p>
+    <p>
+      Total area of the room - 
+      <b>150м<sup>2</sup></b>
+    </p>
+    <p>
+        Solve the equation a
+        <sup>3</sup>
+        +a
+        <sup>2</sup>
+        =4
+    </p>
+    <p>
+        C
+        <sub>2</sub>
+        H
+        <sub>5</sub>
+        OH
+    </p>
+    <p>H<sub>3</sub>PO<sub>4</sub></p>
+    <b>a<sup>2</sup>+b<sup>2</sup>= c <sup>2</sup></b>
+
+    <h4>Теги для введення комп'ютерного коду</h4>
+    <p>code, kbd, samp, var, pre</p>
+
+    <!-- <pre> За замовчуванням браузер ігнорує перенесення рядків -->
+
+    <pre>
                     Wyatt resteth here,
                      that quick could never rest; 
                     Whose heavenly gifts increased by disdain,
-                    </pre>
-                    <pre>
+    </pre>
+    <pre>
                     Wyatt resteth here, that quick could never rest;
                     Whose heavenly gifts increased by disdain,
-                    </pre>
+    </pre>
 
-                    <p>
-                    Wyatt resteth
-                     here,that quick could never rest;
-                    </p>
+    <p>Wyatt resteth here,that quick could never rest;</p>
 
-                    <p>
-                    Wyatt resteth here, that quick could never rest;
-                    </p>
+    <p>Wyatt resteth here, that quick could never rest;</p>
 
-                    <p>
-                        The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
-                        array.
-                    </p>
+    <p>
+      The <code>push()</code> method adds one or more elements to the end of an
+      array and returns the new length of the array.
+    </p>
 
-                    <pre>                    
+    <pre>                    
                         <code style="color: red">
                         function greet(name) {
                             console.log("Hello, " + name + "!");
                         }
                         greet("World");
                         </code>
-                    </pre>
+    </pre>
 
-                    <!-- The <var> HTML element represents the name of a variable -->
-                        <p>
-                            <var>l</var> represents the length,
-                            <var>w</var> the width and <var>h</var> the height of the box.
-                        </p>
-                    
-                    <!-- <kbd>: Елемент ввода з клавіатури keyboard-->
-                    <!-- <samp> - Sample Output -->
+    <!-- The <var> HTML element represents the name of a variable -->
+    <p>
+      <var>l</var> represents the length, <var>w</var> the width and
+      <var>h</var> the height of the box.
+    </p>
 
-            <!-- <address> <time>​ -->
-                <p>Останні новини на 
-                    <time datetime="2019-12-14">14 грудня 2019 року
-                    </time>
-                    .</p>
-                <address>
-                    м. Київ, <br />
-                    Бульвар Лесі Українки, б. 26, <br />
-                    4й поверх офіс 427
-                </address>
+    <!-- <kbd>: Елемент ввода з клавіатури keyboard-->
+    <!-- <samp> - Sample Output -->
 
-    <h2>Текст-риба (Lorem)</h2> 
+    <!-- <address> <time>​ -->
+    <p>
+      Останні новини на
+      <time datetime="2019-12-14">14 грудня 2019 року </time>
+      .
+    </p>
+    <address>
+      м. Київ, <br />
+      Бульвар Лесі Українки, б. 26, <br />
+      4й поверх офіс 427
+    </address>
 
-        <h1>Lorem, ipsum dolor.</h1>
+    <h2>Текст-риба (Lorem)</h2>
 
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut nulla veritatis magni odio accusantium vitae officia distinctio nam laboriosam, sed eos ipsam delectus facere possimus iste cupiditate! Dolores, porro!</p>
+    <h1>Lorem, ipsum dolor.</h1>
 
-        <h3>Title of the first section of the article</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, delectus.</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut nulla
+      veritatis magni odio accusantium vitae officia distinctio nam laboriosam,
+      sed eos ipsam delectus facere possimus iste cupiditate! Dolores, porro!
+    </p>
 
-        <h4>Sub-section heading for the first section</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis temporibus placeat fugiat, fuga quod quam sunt recusandae excepturi tempore minima.</p>
+    
 
-        <h3>Title of the second section of the article</h3>
-        <p>Lorem, ipsum.</p>
+    <!-- СПЕЦИФІКАЦІЯ, Вкладення тегів-->
+    <!-- СAЙТ https://developer.mozilla.org/-->
 
-        <h4>Sub-section heading for the second section</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae natus praesentium in temporibus molestiae obcaecati distinctio! Laudantium, facilis iusto.</p>
 
-    <!-- СПЕЦИФІКАЦІЯ, Вкладення тегів-->  
-    <!-- СAЙТ https://developer.mozilla.org/-->   
+    <h2>Списки</h2>
+
+    <!-- <ol> — контейнер для нумерованого списку, ordered (упорядкований)  -->
+
+    <h3>Як заварити чай</h3>
+    <p>Покрокова інструкція для чайників, просто повтори і у тебе все вийде!</p>
+    <ol>
+      <li>Закип'ятити воду</li>
+      <li>Засипати чай в чашку</li>
+      <li>Налити в чашку окріп</li>
+      <li>Чекати 10 хвилин, після чого можна пити</li>
+    </ol>
+    <p>Покрокова інструкція виготовлення омлету</p>
+    <ol>
+      <li>Збити 4 яйця</li>
+      <li>Додати молоко 100мл</li>
+      <li>Змазати сковороду маслом і розігріти</li>
+      <li>Натерти сиру 60г</li>
+      <li>Влити суміш в сковороду і посипати сиром</li>
+      <li>Готувати на середньому вогні 10 хв</li>
+    </ol>
+
+    <!-- <ul> — контейнер для маркованого списку, unordered (невпорядкований), з невеликого символу (маркера)  -->
+
+    <h3>Найгарячіші курорти</h3>
+    <p>Цього року експерти рекомендують відвідати наступні локації.</p>
+    <ul>
+      <li>
+        Техніка
+        <ul>
+          <li>Телевізори</li>
+          <li>Пилососи</li>
+          <li></li>
+        </ul>
+      </li>
+      <li>Туреччина</li>
+      <li>Греція</li>
+      <li>Єгипет</li>
+    </ul>
+
+
+    <!-- <dl> — список визначень (description list) -->
+    <dl>
+      <dt>Тег</dt>
+      <dd>- елемент мови розмітки гіпертексту</dd>
+      <dt>Атрибути</dt>
+      <dd>
+        - це додаткові налаштування тегів, за допомогою яких можна змінювати
+        властивості і поведінку елемента
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><b>HTML</b></dt>
+      <dd>- Hyper Text Markup Language</dd>
+      <dt><b>CSS</b></dt>
+      <dd>- Cascading Style Sheets</dd>
+      <dt><b>JavaScript</b></dt>
+      <dd>- is a programming language for evaluating user interactions</dd>
+    </dl>
+
+    <!-- <p> Як ви думаєте чи можна вкладати списки у списки??</p> -->
+    <!-- Вкладені списки -->
 
     <h2>Посилання</h2>
 
-        <!-- Тег <a> - призначений для створення посилань, тексту, клікаючи на який, 
+    <!-- Тег <a> - призначений для створення посилань, тексту, клікаючи на який, 
             переходимо на іншу сторінку, завантажуємо файл тощо. -->
 
-            <a href="https://google.com">Посилання на головну сторінку Google</a>
+    <a href="https://google.com">Посилання на головну сторінку Google</a>
 
-            <!-- обов'язковий атрибут href="адреса". Адреса - це URL,яка може вказувати на сторінку, файл -->
+    <!-- обов'язковий атрибут href="адреса". Адреса - це URL,яка може вказувати на сторінку, файл -->
 
-            <!-- Атрибут target="значення" визначає те, в який вкладці повинен відкриватися документ -->
-            <!--  _blank, сторінка відкривається у новій вкладці браузера -->
-            <!-- За замовчуванням посилання відкривається в поточній вкладці браузера. target=ціль -->
+    <!-- Атрибут target="значення" визначає те, в який вкладці повинен відкриватися документ -->
+    <!--  _blank, сторінка відкривається у новій вкладці браузера -->
+    <!-- За замовчуванням посилання відкривається в поточній вкладці браузера. target=ціль -->
 
-            <!-- Атрибут rel доповнює інформацією про відношення між поточним і пов'язаним документом, 
+    <!-- Атрибут rel доповнює інформацією про відношення між поточним і пов'язаним документом, 
                 і використовується в парі з target="_blank". -->
 
-            <p>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    Facebook
-                </a>
-            </p>  
+    <p>
+      <a
+        href="https://www.facebook.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Facebook
+      </a>
+    </p>
 
-            <h3>Атрибут download</h3>
 
-            <!-- Якщо в href посиланні зазначений шлях до файлу, 
+    <h3>Атрибут download</h3>
+
+    <!-- Якщо в href посиланні зазначений шлях до файлу, 
                 браузер спробує його відкрити у поточному вікні, якщо вміє обробляти файли цього типу.  -->
-            <!-- Атрибут download="ім'я файлу" повідомляє браузеру, що зазначений ресурс не повинен відкриватися, 
+    <!-- Атрибут download="ім'я файлу" повідомляє браузеру, що зазначений ресурс не повинен відкриватися, 
             а завантажуватися в момент, коли користувач клікне на посилання. -->
 
-                <!-- <a href="/путь/к/cv.pdf" download>Завантажити резюме</a> -->
+    <!-- <a href="/путь/к/cv.pdf" download>Завантажити резюме</a> -->
 
-                <a href="./documents/карпати2021КлещКВ.docx.pdf" >Завантажити файл</a>
-                <a href="./documents/карпати2021КлещКВ.docx.pdf" download>Завантажити файл</a>
-                <a href="./documents/карпати2021КлещКВ.docx.pdf" download="Маршрутний лист">Завантажити файл</a>
+    <a href="./documents/карпати2021КлещКВ.docx.pdf">Завантажити файл</a>
+    <a href="./documents/карпати2021КлещКВ.docx.pdf" download
+      >Завантажити файл</a
+    >
+    <a href="./documents/карпати2021КлещКВ.docx.pdf" download="Маршрутний лист"
+      >Завантажити файл</a
+    >
 
-            <h3>Спеціальні значення href</h3>
 
-                <!-- Посилання на телефонний номер -->
-                    <a href="tel:+14251234563">+1 (425) 123-45-63</a>
+    <h3>Спеціальні значення href</h3>
 
-                <!-- Посилання на адресу електронної пошти  -->
-                    <a href="mailto:example@mail.ua">example@mail.ua</a>
+    <!-- Посилання на телефонний номер -->
+    <a href="tel:+14251234563">+1 (425) 123-45-63</a>
 
-            <h3>Посилання-якір</h3>
-            <!-- Посилання-якір - навігація по поточній сторінці-->
+    <!-- Посилання на адресу електронної пошти  -->
+    <a href="mailto:example@mail.ua">example@mail.ua</a>
 
-                <h1>Dental clinic website</h1>
 
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                </ul>
 
-                <section>
-                <h2 id="about">About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quod. Nulla ea nobis magnam, fuga vitae temporibus similique quasi, et autem, voluptas ipsam nesciunt! Cumque quisquam id, provident odio maxime </p>
-                <p>Sequi doloribus voluptate nulla recusandae, aspernatur optio autem fugiat cum laboriosam soluta? Saepe fugit modi sequi, illum aut voluptas distinctio esse placeat incidunt ea quasi libero dolor expedita sed consequuntur ullam rem</p>
-                </section>
+    <h3>Посилання-якір</h3>
+    <!-- Посилання-якір - навігація по поточній сторінці-->
 
-                <section>
-                <h2 id="features">Features</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quod. Nulla ea nobis magnam, fuga vitae temporibus similique quasi, et autem, voluptas ipsam nesciunt! Cumque quisquam id, provident odio maxime tempore molestiae doloribus</p>
-                <p>Sequi doloribus voluptate nulla recusandae, aspernatur optio autem fugiat cum laboriosam soluta? Saepe fugit modi sequi, illum aut voluptas distinctio esse placeat incidunt ea quasi libero dolor expedita sed consequuntur ullam rem</p>
-                </section>
+    <h1>Dental clinic website</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+    </ul>
+    <section>
+      <h2 id="about">About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quod.
+        Nulla ea nobis magnam, fuga vitae temporibus similique quasi, et autem,
+        voluptas ipsam nesciunt! Cumque quisquam id, provident odio maxime
+      </p>
+      <p>
+        Sequi doloribus voluptate nulla recusandae, aspernatur optio autem
+        fugiat cum laboriosam soluta? Saepe fugit modi sequi, illum aut voluptas
+        distinctio esse placeat incidunt ea quasi libero dolor expedita sed
+        consequuntur ullam rem
+      </p>
+    </section>
+    <section>
+      <h2 id="features">Features</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quod.
+        Nulla ea nobis magnam, fuga vitae temporibus similique quasi, et autem,
+        voluptas ipsam nesciunt! Cumque quisquam id, provident odio maxime
+        tempore molestiae doloribus
+      </p>
+      <p>
+        Sequi doloribus voluptate nulla recusandae, aspernatur optio autem
+        fugiat cum laboriosam soluta? Saepe fugit modi sequi, illum aut voluptas
+        distinctio esse placeat incidunt ea quasi libero dolor expedita sed
+        consequuntur ullam rem
+      </p>
+    </section>
+
+
 
     <h2>Кнопка</h2>
     <!-- 7. Кнопка - Це інтерактивний елемент, який оживляється за допомогою JavaScript. -->
 
-        <!-- <p>Важливо не плутати посилання і кнопку. Якщо по кліку на елемент інтерфейсу відбувається перехід за якоюсь адресою, тобто присутній href, то це посилання. Якщо ж по кліку відбувається щось без перезавантаження або перенаправлення сторінки — це гарантовано кнопка.</p> -->
+    <!-- <p>Важливо не плутати посилання і кнопку. Якщо по кліку на елемент інтерфейсу відбувається перехід за якоюсь адресою, тобто присутній href, то це посилання. Якщо ж по кліку відбувається щось без перезавантаження або перенаправлення сторінки — це гарантовано кнопка.</p> -->
 
-        <button type="button">Відкрити модальне вікно</button>
-        <button type="submit">Відправити форму</button>
-
-    <h2>Списки</h2>
-
-        <!-- <ol> — контейнер для нумерованого списку, (упорядкований)  -->
-
-            <h3>Як заварити чай</h3>
-            <p>Покрокова інструкція для чайників, просто повтори і у тебе все вийде!</p>
-            <ol>
-                <li>Закип'ятити воду</li>
-                <li>Засипати чай в чашку</li>
-                <li>Налити в чашку окріп</li>
-                <li>Чекати 10 хвилин, після чого можна пити</li>
-            </ol>
-            <p>Покрокова інструкція виготовлення омлету</p>
-            <ol>
-                <li>Збити 4 яйця</li>
-                <li>Додати молоко 100мл </li>
-                <li>Змазати сковороду маслом і розігріти</li>
-                <li>Натерти сиру 60г</li>
-                <li>Влити суміш в сковороду і посипати сиром</li>
-                <li>Готувати на середньому вогні 10 хв</li>
-            </ol>
-
-        <!-- <ul> — контейнер для маркованого списку, (невпорядкований), з невеликого символу (маркера)  -->
-
-            <h3>Найгарячіші курорти</h3>
-            <p>Цього року експерти рекомендують відвідати наступні локації.</p>
-            <ul>
-                <li>Техніка
-                    <ul>
-                        <li>Телевізори</li>
-                        <li>Пилососи</li>
-                        <li></li>
-                    </ul>
-                </li>
-                <li>Туреччина</li>
-                <li>Греція</li>
-                <li>Єгипет</li>
-            </ul>
-
-            <h3>Як пожарити яйце</h3>
-            <p>Приготування:</p>
-            <ol>
-                <li>Дістаньте сковороду, яйце(яйця), олію</li>
-                <li>Налити в сковороду олію</li>
-                <li>Розбити яйце(або яйця)</li>
-                <li>Послоти</li>
-                <li>Обжарювати з кожної сторони 2 хв</li>
-            </ol>
-
-            <ol>
-                <li>відрізати хліб</li>
-                <li>намазати масло</li>
-                <li>ввідрізати ковбасу</li>
-                <li>покласти ковбасу на хліб</li>
-                <li>З'ЇСТИ</li>
-            </ol>
-
-        <!-- <dl> — список визначень (description list) -->
-            <dl>
-                <dt> Тег </dt>
-                <dd>- елемент мови розмітки гіпертексту</dd>
-                <dt> Атрибути </dt>
-                <dd>- це додаткові налаштування тегів, за допомогою яких можна змінювати властивості і поведінку елемента</dd>
-            </dl>
-
-            <dl>  
-                <dt><b>HTML</b></dt>  
-                <dd>- Hyper Text Markup Language</dd>
-                <dt><b>CSS</b></dt>  
-                <dd>- Cascading Style Sheets</dd>
-                <dt><b>JavaScript</b></dt>  
-                <dd>- is a programming language for evaluating user interactions</dd>
-            </dl>
+    <button type="button">Відкрити модальне вікно</button>
+    <button type="submit">Відправити форму</button>
 
 
-        <!-- <p> Як ви думаєте чи можна вкладати списки у списки??</p> -->
-        <!-- Вкладені списки -->
 
     <h2>Медіа-теги img, video, audio</h2>
 
-            <img
-                src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
-                alt="Macbook Air на сірому дерев'яному столі"
-                width="400"
-            />
+        <!-- Абсолютні і відносні шляхи​ -->
 
-            <img
-                src="./images/kittens.jpg"
-                alt="Три кошеня грають на соломі. Два сірих і один чорний."
-                width="400"
-            />
-
-            <!-- зображення-посилання -->
-
-            <a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
-                <img
-                    src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
-                    alt="Рудий кіт"
-                    width="640"
-                />
-            </a>
-
-            <!-- Зображення з підписом -->
-                
-                <figure>
-                    <img src="./images/kittens.jpg" alt="Три кошеня грають на соломі." width="400" />
-                    <figcaption>Три кошеня грають на соломі.</figcaption>
-                </figure>
-                <figure>
-                    <figcaption>Три кошеня грають на соломі.</figcaption>
-                    <img src="./images/kittens.jpg" alt="Три кошеня грають на соломі." width="400" />
-                </figure>
-
-            <!-- Абсолютні і відносні шляхи​ -->
-
-            <!-- 1) Абсолютний шлях​ вказує точне місце розташування файлу в структурі папок на сервері. -->
-                <!-- https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg -->
-                <!-- протокол(Hyper Text Transfer protocol)
+    <!-- 1) Абсолютний шлях​ вказує точне місце розташування файлу в структурі папок на сервері. -->
+    <!-- https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg -->
+    <!-- протокол(Hyper Text Transfer protocol)
                     ім'я сервера (images.pexels.com)
                     шлях до файлу зображення (/photos/583842/ - імена папок)
                     pexels-photo-583842.jpeg (name)-->
+    
+    <img
+      src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
+      alt="Macbook Air на сірому дерев'яному столі"
+      width="400"
+    />
 
-            <!-- 2) Відносний шлях​ описує шлях до ресурсу щодо поточного файлу. -->
+    <!-- 2) Відносний шлях​ описує шлях до ресурсу щодо поточного файлу. -->
 
-                <img
-                    src="./images/structure.webp"
-                    alt="structure of folders"
-                    width="800"
-                />
-                <img
-                    src="./images/kittens.jpg"
-                    alt="structure of folders"
-                    width="800"
-                />
+    <img
+      src="./images/kittens.jpg"
+      alt="Три кошеня грають на соломі. Два сірих і один чорний."
+      width="400"
+    />
+    <img src="./images/structure.webp" alt="structure of folders" width="800" />
 
-        <!--  <video> -->
-            <video 
-                src="http://techslides.com/demos/sample-videos/small.webm"           poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" 
-                width="640" 
-                controls 
-                loop 
-                preload="auto">
-            </video>
 
-            <!-- <video
+
+    <!-- зображення-посилання -->
+
+    <a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
+      <img
+        src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
+        alt="Рудий кіт"
+        width="640"
+      />
+    </a>
+
+    <!-- Зображення з підписом -->
+
+    <figure>
+      <img
+        src="./images/kittens.jpg"
+        alt="Три кошеня грають на соломі."
+        width="400"
+      />
+      <figcaption>Три кошеня грають на соломі.</figcaption>
+    </figure>
+    <figure>
+      <figcaption>Три кошеня грають на соломі.</figcaption>
+      <img
+        src="./images/kittens.jpg"
+        alt="Три кошеня грають на соломі."
+        width="400"
+      />
+    </figure>
+
+
+    <!--  <video> -->
+    <video
+      src="http://techslides.com/demos/sample-videos/small.webm"
+      poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+      width="640"
+      controls
+      loop
+      preload="auto"
+    ></video>
+
+    <!-- <video
                 poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
                 width="640"
                 controls
@@ -454,36 +497,47 @@
                 />
             </video> -->
 
-        <!-- <audio> -->
-            <audio src="./audio/plach_remi-lish_vona.mp3" controls autoplay loop preload="auto"></audio>
+    <!-- <audio> autoplay -->
+    <audio
+      src="./audio/plach_remi-lish_vona.mp3"
+      controls
+      
+      loop
+      preload="auto"
+    ></audio>
 
-            <!-- <audio controls>
+    <!-- <audio controls>
                 <source src="song.mp3" type="audio/mpeg" />
                 <source src="song.ogg" type="audio/ogg" />
             </audio> -->
 
-        <!-- <iframe > -->    
+    <!-- <iframe > -->
 
-            <h3 style="font-size: 24px">
-                    <i>
-                        Завантаження Youtube-відео сайта 
-                        <a href="https://www.youtube.com/watch?v=qVqoBQLhUEs&ab_channel=MicaMediaNL" target="_blank">
-                        <u>www.youtube.com</u>:
-                        </a>
-                    </i>
-            </h3>
-            <iframe 
-                width="560" height="315" 
-                src="https://www.youtube.com/embed/qVqoBQLhUEs?si=iiNqToO7M6q_3VaL" title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+    <h3 style="font-size: 24px">
+      <i>
+        Завантаження Youtube-відео сайта
+        <a
+          href="https://www.youtube.com/watch?v=qVqoBQLhUEs&ab_channel=MicaMediaNL"
+          target="_blank"
+        >
+          <u>www.youtube.com</u>:
+        </a>
+      </i>
+    </h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qVqoBQLhUEs?si=iiNqToO7M6q_3VaL"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    >
+    </iframe>
 
+    <!-- Підтримка старих браузерів -->
 
-        <!-- Підтримка старих браузерів -->
-
-            <!-- <video
+    <!-- <video
                 poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
                 width="640"
                 controls
@@ -504,14 +558,21 @@
                 Your browser does not support the <code>video</code> element.
             </video> -->
 
-            <!-- <audio controls>
+    <!-- <audio controls>
                 <source src="song.mp3" type="audio/mpeg" />
                 <source src="song.ogg" type="audio/ogg" />
 
                 Your browser does not support the <code>audio</code> element.
             </audio> -->
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qVqoBQLhUEs?si=XCdhxTlgWu7GIsig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qVqoBQLhUEs?si=XCdhxTlgWu7GIsig"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
