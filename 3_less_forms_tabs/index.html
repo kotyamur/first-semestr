@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Блочні та рядкові теги, таблиці, форми</h1>
+
+    <h2>Рядкові та блочні</h2>
+    <!-- ................. -->
+    <p><b>Потік документа</b>​ — це вертикальний і горизонтальний порядок відображення елементів на сторінці</p>
+    <p>За замовчуванням, елементи відображаються на сторінці в тому порядку, в якому вони вказані в HTML-документі</p>
+    <p>Зверху вниз, зліва направо</p>
+    <p>Елементи — це прямокутні області, які займають певне місце у так званих «рядках»</p>
+
+    <p>Існує два основних типи елементів — <b>блокові і рядкові</b></p>
+    
+    
+
+    <h3>Блоковий елемент</h3>
+    <p>Займає повністю увесь рядок, незалежно від обсягу його контенту</p>
+    <p> За допомогою <b>блочних</b> елементів можна створювати структуру веб-сторінки</p>
+
+    <div   style="outline: 1px solid rgb(38, 0, 255); width: 100%">це div</div>
+    <form  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це form</form>
+    <nav  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це nav</nav>
+    <ul  style="outline: 1px solid rgb(38, 0, 255); width: 100%">
+        <li  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це li</li>
+    </ul>
+    <header  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це header</header>
+    <aside  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це aside</aside>
+    <main  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це main</main>
+    <footer  style="outline: 1px solid rgb(38, 0, 255); width: 100%">це footer</footer>
+
+    <p><b>Блочні елементи за замовчуванням мають стовідсоткову ширину</b></p>
+    <p><i>Блочні елементи можуть містити в собі як рядкові так і блочні теги</i></p>
+
+    <header style="outline: 1px solid rgb(38, 0, 255); width: 100%">це header
+        <nav style="outline: 1px solid rgb(38, 0, 255); width: 100%">це nav
+            <ul style="outline: 1px solid rgb(38, 0, 255); width: 100%">
+                <li style="outline: 1px solid rgb(38, 0, 255); width: 100%">це li</li>
+                <li style="outline: 1px solid rgb(38, 0, 255); width: 100%">це li</li>
+                <li style="outline: 1px solid rgb(38, 0, 255); width: 100%">це li</li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <h3>Рядковий елемент</h3>
+    <p>Рядкові- ширина за контентом</p>
+    <p>А рядкові елементи використовують для форматування текстових елементів</p>
+    <i>ми не можемо вкладати в Рядкові блочні теги</i>
+
+    <a href="https://htmlreference.io/" target="_blank" rel="noreferrer noopener"  style="outline: 1px solid red">це посилання <b>htmlreference</b></a>
+    <span  style="outline: 1px solid red">це span</span>
+    <em  style="outline: 1px solid red">це em</em>
+    <b  style="outline: 1px solid red">це b</b>
+    <i  style="outline: 1px solid red">це і</i>
+    <input type="text"  style="outline: 1px solid red">
+    <img
+        src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
+        alt="Macbook Air на сірому дерев'яному столі"
+        width="400"  style="outline: 1px solid red"
+    />
+    <img
+        src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
+        alt="Macbook Air на сірому дерев'яному столі"
+        width="400"  style="outline: 1px solid red"
+    />
+
+    <h3 style="outline: 1px solid rgb(38, 0, 255); width: 100%">я заголовок 3</h3>
+    <a style="outline: 1px solid red">я посилання</a>
+    <b style="outline: 1px solid red">я тег </b>
+    <p style="outline: 1px solid rgb(76, 0, 255); width: 100%">я параграф</p>
+
+    <!-- створити список з рядкових -->
+
+
+    
+    <h2>Символьні підстановки</h2>
+    <!-- ................. -->
+
+    <p>Не всі символи можна набрати на клавіатурі.</p>
+    <p>
+        Наприклад, символ зареєстрованого торгового знака &reg;, 
+        торгової марки &trade;, 
+        авторського права &copy;.
+    </p>
+
+    <p><b>Символьні підстановки</b> - це спеціальні рядки, що перетворюються браузерами в символи.</p>
+
+    <p>Наприклад, символ авторського права &copy; можна додати наступним чином:</p>
+    <ul>
+        <li>Всі права захищені &copy; Lex, 2020 («мнемокодом», тобто іменем)</li>
+        <li>Всі права захищені &#169; Lex, 2020 (десятковим кодом)</li>
+        <li>Всі права захищені &#xa9; Lex, 2020 (шістнадцятковим кодом)</li>
+    </ul>
+
+    <p> Символьні підстановкидля символів, що мають спеціальне призначення в HTML</p>
+
+    <p>Для напівжирного тексту, виділіть його тегами <strong> і </strong>.</p>
+
+    <p>
+        Для напівжирного тексту, виділіть його тегами &lt;strong&gt; і &lt;/strong&gt;.
+    </p>
+
+    <!-- &lt; &gt;  -->
+
+    <ul>
+        <li>&lt;strong&gt;</li>
+        <li>&para;</li>
+        <li>&#182;</li>
+        <li>&#xb6;</li>
+    </ul>
+
+    <ul>
+        <li>&#8448;</li>
+        <li>&#8448;</li>
+        <li>&#8448;</li>
+    </ul>
+
+    <p>Є офіційна сторінка 
+        <a href="https://html.spec.whatwg.org/multipage/named-characters.html" target="_blank" rel="noreferrer noopener">W3C</a> і 
+        <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank" rel="noreferrer noopener">сервіс від Toptal</a>, 
+        де можна знайти мнемоніку для будь-якого символу.
+    </p>
+
+    <p>
+        <b>Юніко́д (англ. Unicode)</b>,
+        УНІфіковане КОДування — 
+        <a  href="https://home.unicode.org/" target="_blank" rel="noreferrer noopener">промисловий стандарт</a>,
+        розроблений, щоб забезпечити цифрове представлення символів усіх писемностей світу та спеціальних символів.
+    </p>
+
+    <h2>Таблиці</h2>
+
+    <!-- <table> — контейнер таблиці
+        <tr> — окремий рядок
+        <td> — окрема комірка -->
+
+    <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-02/train-schedule.png" width="400">
+
+    <h2>schedule</h2>
+
+    <table>
+        <caption>schedule</caption>
+        <thead>
+            <tr>
+                <th>number</th>
+                <th>route</th>
+                <th>time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>433</td>
+            <td>London-paris</td>
+            <td>5 hours</td>
+        </tr>
+        <tr>
+            <td>701</td>
+            <td>new york-chicago</td>
+            <td>7 hours</td>
+        </tr>
+        <tr>
+            <td>258</td>
+            <td>oslo-warsaw</td>
+            <td>4 hours</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- <th> — комірка шапки -->
+
+
+    <!-- <thead> — шапка таблиці
+        <th> — комірка шапки
+        <tbody> — тіло таблиці
+        <tfoot> — підвал таблиці -->
+
+
+    <!-- <caption> перший в таблиці -->
+
+
+    <h1>Розклад потягів</h1>
+    <table>
+        <!-- <caption>
+            Розклад потягів
+        </caption> -->
+        <thead>
+            <tr>
+            <th>Номер</th>
+            <th>Маршрут</th>
+            <th>Час у дорозі</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>433</td>
+            <td>Київ - Ковель</td>
+            <td>5 годин</td>
+            </tr>
+            <tr>
+            <td>701</td>
+            <td>Харків - Дніпро</td>
+            <td>7 годин</td>
+            </tr>
+            <tr>
+            <td>258</td>
+            <td>Львів - Одеса</td>
+            <td>4 годин</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-02/cloud-services.png" width="400">
+
+    <!-- Групування клітинок -->
+    <!-- в кожному рядку повинна бути однакова кількість клітинок, тому «зайві» поки що залишаємо порожніми -->
+    <!-- Правило рівності кількості клітинок в рядках і стовпчиках не можна скасувати, але можна оминути -->
+    <p>щоб розширити клітинку за горизонталлю, використовується атрибут colspan, за вертикаллю - rowspan</p>
+    <!-- <th rowspan="2">Хмарний сервіс</th>
+      <th colspan="3">Використання</th> -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Хмарний сервіс</th>
+                    <th colspan="3">Використання</th>
+                </tr>
+                <tr>
+                    <th>Користувачі</th>
+                    <th>Відвідування</th>
+                    <th>Об`єм</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>ggggggGoogle</td>
+                <td>gggggg12000</td>
+                <td>gggggg307000</td>
+                <td>gggggg1000 Tb</td>
+                </tr>
+                <tr>
+                <td>ggggggAmazon</td>
+                <td>gggggg9000</td>
+                <td>gggggg200500</td>
+                <td>gggggg800 Tb</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2>Форми</h2>
+
+    <ol>
+        <li></li>
+    </ol>
+
+    <p>Форми - це «грошові сторінки», завдяки яким інтернет-магазини продають свої товари, а онлайн-сервіси отримують оплату за надані послуги. Компанії вимірюють успіх свого веб-сайту ефективністю його форм, тому що вони відповідають на такі питання, як «скільки потенційних клієнтів наш веб-сайт відправив відділу продажів?» і «скільки людей підписалося на наш продукт минулого тижня?». Тому форми постійно рефакторяться і покращуються.</p>
+
+    <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/img/lesson-11/form-frontend-and-backend.png" alt="forms" width="500">
+
+    <p>Функціональна HTML-форма складається з двох частин: інтерфейс користувача і сервер (бекенд). Перше - це зовнішній вигляд форми (розмітка і оформлення), а друге - код обробки введених даних (валідація, зберігання даних, відправлення електронної пошти тощо).</p>
+
+    <p>Елемент <b>form</b> - це контейнер для групи пов'язаних елементів форми.</p>
+
+    <!-- name — унікальне ім'я форми -->
+    <!-- autocomplete — визначає, чи може браузер автоматично заповнювати значенн -->
+    <!-- novalidate — атрибут-прапорець, не має значення. Каже браузеру не перевіряти валідність введених дани -->
+
+    <form name="signup_form" autocomplete="on" novalidate>
+        <!-- Елемент <label> пов'язує опис (мітку) з інтерактивним елементом форми -->
+        <!-- зв'язок створюється браузером автоматично -->
+        <label>
+            Email
+            <!-- Елемент <input> — це універсальний елемент для створення різноманітних полів введення. -->
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" />
+        </label>
+
+        <!-- По кліку на button, Enter - перезавантаження поточної сторінки -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <form>
+        <label>
+            name
+            <input />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Якщо елемент форми не вкладений в <label>, необхідно явно зв'язати їх за допомогою атрибута id елемента, що зв'язується, і атрибута for мітки. -->
+
+    <form>
+        <label for="user_email">Email</label>
+        <input type="email" name="email" id="user_email" />
+
+        <label for="user_password">Password</label>
+        <input type="password" name="password" id="user_password" />
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>input</h3>
+
+    <!-- Концептуально тег <input> представляє запис у словнику, який відправляється на сервер. Атрибут name визначає ім'я цього запису, а значення - це те, що ввів користувач. -->
+
+    <p>Значення атрибута  <b>type</b> впливає на тип поля, набір символів, які в нього можна ввести і подальшу валідацію значення , значення якого за замовчуванням text</p>
+
+    <form>
+        <!-- Атрибут autofocus -->
+        <label>
+            First name
+            <input type="text" name="firstName" autofocus />
+        </label>
+        <label>
+            Last name
+            <input type="text" name="lastName" />
+        </label>
+
+        <!-- Атрибут placeholder -->
+
+        <label>
+            Username
+            <input type="text" name="username" placeholder="Jacob Mercer" />
+        </label>
+
+        <!-- type="email" -->
+
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <!-- type="password" -->
+        <label>
+            Password
+            <input type="password" name="pwd" minlength="5" maxlength="12" />
+        </label>
+        <!-- type="tel" -->
+        <label>
+            Phone number
+            <input type="tel" name="phone" />
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h4>Радіо-кнопки</h4>
+
+    <!-- Радіо-кнопки (перемикачі) -->
+    <!-- type значення radio  -->
+    <!--  однакове значення атрибута name, інакше браузер не знатиме, що це група. -->
+    <!-- не можна вводити дані, тому кожній з них необхідно вказати значення в атрибуті value -->
+
+    <form>
+        <p>Choose a color:</p>
+        <label>
+            <input type="radio" name="color" value="red" />
+            Red
+        </label>
+        <!-- Логічний атрибут checked вказує на те, який перемикач буде обраний (відмічений) за замовчуванням -->
+        <label>
+            <input type="radio" name="color" value="white" checked />
+            White
+        </label>
+        <label>
+            <input type="radio" name="color" value="green" />
+            Green
+        </label>
+
+        <p>Select size:</p>
+        <label>
+            <input type="radio" name="size" value="sm" />
+            Small
+        </label>
+        <label>
+            <input type="radio" name="size" value="md" />
+            Medium
+        </label>
+        <label>
+            <input type="radio" name="size" value="lg" checked />
+            Large
+        </label>
+    </form>
+
+    <!-- Чекбокси (прапорці) -->
+    <h4>Чекбокси (прапорці)</h4>
+
+    <form>
+        <p>What are your hobbies?</p>
+        <label>
+            <input type="checkbox" name="hobby" value="music" checked />
+            Music
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="sports" checked />
+            Sports
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="reading" />
+            Reading
+        </label>
+    </form>
+
+    <!-- Числа -->
+    <h4>Числа</h4>
+
+    <form>
+        <label>
+            Weight with 0.5 step value:
+            <input type="number" name="weight" min="0" max="200" step="0.5" value="0" />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Телефонні номери -->
+    <h4>Телефонні номери</h4>
+
+    <form>
+        <label>
+            Phone number
+            <input type="tel" name="phone_number" />
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Повзунки -->
+    <h4>Повзунки</h4>
+
+    <label>
+        Interest rate:
+        <input
+            type="range"
+            name="interest_rate"
+            value="40"
+            min="0"
+            max="100"
+            step="20"
+        />
+    </label>
+
+    <h4>Дата та час</h4>
+    <!-- Дата та час -->
+
+    <label>
+        Date
+        <input type="date" />
+    </label>
+
+    <p>Time</p>
+
+    <label>
+        Time
+        <input type="time" />
+    </label>
+
+    <p>Date and time</p>
+
+    <label>
+        Date and time
+        <input type="datetime-local" />
+    </label>
+
+    <!-- Елемент <textarea> -->
+    <h3>textarea</h3>
+    <p>багаторядкове текстове поле</p>
+
+    <form >
+        <label>
+            Username
+            <input type="text" name="username" placeholder="Jack Meadows">
+        </label>
+        <label>
+            Feedback
+            <textarea name="feedback" rows="10" placeholder="Enter your message here..."></textarea>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Елемент <select> -->
+        <h3>select</h3>
+
+        <p>Випадне меню - це альтернатива радіо-кнопкам, оскільки за замовчуванням дозволяє вибрати один з багатьох варіантів. </p>
+        <p>Текст всередині елемента <b>option</b> відображається користувачеві, а значення атрибута value - це те, що буде використано під час відправлення форми.</p>
+
+        <label for="size">Size</label>
+            <select id="size" name="size">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>
+            </select>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vero et tempore quae eum cumque perferendis voluptates temporibus molestias neque.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vero et tempore quae eum cumque perferendis voluptates temporibus molestias neque.</p>
+
+    
+
+</body>
+</html>
