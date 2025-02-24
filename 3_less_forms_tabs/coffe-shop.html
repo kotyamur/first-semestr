@@ -16,6 +16,18 @@
         padding: 10px;
         border: 1px solid #2a2a2a;
       }
+      form {
+        padding: 10px;
+        border: 1px solid #2a2a2a;
+      }
+      label {
+        display: block;
+        margin-bottom: 20px;
+      }
+      textarea {
+        resize: none;
+        display: block;
+    }
     </style>
   </head>
   <body>
@@ -68,7 +80,7 @@
           </li>
         </ol>
       </section>
-      <section  id="advantages">
+      <section id="advantages">
         <h2>Our advantages</h2>
         <ul>
           <li>
@@ -104,7 +116,7 @@
           </li>
         </ul>
       </section>
-      <section  id="menu">
+      <section id="menu">
         <h2>Our menu</h2>
         <table>
           <thead>
@@ -202,10 +214,87 @@
           </tbody>
         </table>
       </section>
+      <section>
+        <h2>Зробити замовлення</h2>
+        <form class="form">
+          <div
+            class="form-group"
+            role="group"
+            aria-labelledby="contact-details-head"
+          >
+            <h3 id="contact-details-head">Введіть ваші дані</h3>
+            <label>
+              Імя та прізвище
+              <input type="text" name="username" />
+            </label>
+            <label>
+              Пошта
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Номер телефону
+              <input type="tel" name="phone" />
+            </label>
+          </div>
+
+          <div class="form-group" role="group" aria-labelledby="product-head">
+            <h3 id="product-head">Замовлення</h3>
+            <label for="product"
+              >Продукт
+              <select id="product" name="product">
+                <option value="coffe" selected>Кава</option>
+                <option value="dessert" >Десерт</option>
+                <option value="drink">Напій</option>
+              </select>
+            </label>
+            <label for="size"
+              >Порція
+              <select id="size" name="size">
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>
+              </select>
+            </label>
+            <label>
+                Кількість
+              <input
+                type="number"
+                name="amount"
+                min="1"
+                max="20"
+                step="1"
+                value="1"
+              />
+              
+            </label>
+          </div>
+
+          <div class="form-group" role="group" aria-labelledby="delivery-head">
+            <h3 id="delivery-head">Доставка</h3>
+            <label>
+              <input type="radio" name="delivery" value="myself" checked />
+              Заберу сам
+            </label>
+            <label>
+              <input type="radio" name="delivery" value="courier" />
+              Кур'єром
+            </label>
+          </div>
+          <label>
+            Деталі замовлення
+            <textarea name="comment" rows="5" placeholder="Введіть коментар..."></textarea>
+          </label>
+
+          <button type="submit" style="margin-top: 20px">Замовити</button>
+        </form>
+      </section>
     </main>
     <footer>
       <h2>Brownie</h2>
-      <p>Завітайте до кав'ярні "Брауні" та відчуйте справжній смак кави! Ми чекаємо на вас!</p>
+      <p>
+        Завітайте до кав'ярні "Брауні" та відчуйте справжній смак кави! Ми
+        чекаємо на вас!
+      </p>
       <h3>Our contacts</h3>
       <address>
         Kyiv <br />
