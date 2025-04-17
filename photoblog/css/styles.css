@@ -1,0 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Tangerine:wght@400;700&display=swap'); */
+
+
+/* @font-face {
+    font-family: "Protest Guerrilla";
+    src: url(../fonts/ProtestGuerrilla-Regular.ttf);
+} */
+
+:root {
+    --main-text-color: #626262;
+    --heading-color: #B4AD9E;
+    --nav-link-color: #7D7D7D;
+    --accent-color: #03A9F4;
+    --bg-color: #FFFFFF;
+    --border-btn-color: #626262;
+
+    --font-family: "Playfair Display", sans-serif;
+    --second-family: "Ubuntu", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header-link {
+    color: var(--nav-link-color);
+}
+
+.header-link.current {
+    color: var(--accent-color);
+}
+
+.gallery-topic {
+    font-family: var(--second-family);
+    font-weight: 300;
+    color: var(--heading-color);
+}
+
+.gallery-heading {
+    font-size: 30px;
+}
+
+.gallery-btn {
+    font-family: inherit;
+    font-size: 14px;
+    color: inherit;
+}

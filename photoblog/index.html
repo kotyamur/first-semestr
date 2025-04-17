@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photoblog</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./">LIFESTYLE</a></li>
-                <li><a href="./">PHOTODIARY</a></li>
-                <li><a href="./">MUSIC</a></li>
-                <li><a href="./">TRAVEL</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <!-- gallery list -->
-            <ul>
-            <li>
-                <img src="./images/img-music.jpg" alt="music">
-                <p>LIFESTYLE</p>
-                <h3>More than just a music festival</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-            <li>
-                <p>LIFESTYLE</p>
-                <h3>Life tastes better with coffee</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-            <li>
-                <p>PHOTODAIRY</p>
-                <h3>American dream</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-            <li>
-                <p>PHOTODAIRY</p>
-                <h3>A day exploring the Alps</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-            <li>
-                <p>LIFESTYLE</p>
-                <h3>Top 10 song for running</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-            <li>
-                <p>LIFESTYLE</p>
-                <h3>Cold winter days</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-            </li>
-        </ul>
-        <button type="button">Load more</button>
-        </section>
-    </main>             
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="./css/styles.css" rel="stylesheet" />
+   
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="header-list list">
+          <li><a class="header-link current" href="./index.html">LIFESTYLE</a></li>
+          <li><a class="header-link" href="./">PHOTODIARY</a></li>
+          <li><a class="header-link" href="./music.html">MUSIC</a></li>
+          <li><a class="header-link" href="./">TRAVEL</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <!-- gallery list -->
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="./images/img-music.jpg" alt="music" />
+            <p class="gallery-topic">LIFESTYLE</p>
+            <h3 class="gallery-heading">More than just a music festival</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/coffe.jpg" alt="coffee" />
+            <p class="gallery-topic">LIFESTYLE</p>
+            <h3 class="gallery-heading">Life tastes better with coffee</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/dream.jpg" alt="dream" />
+            <p class="gallery-topic">PHOTODAIRY</p>
+            <h3 class="gallery-heading">American dream</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/alps.jpg" alt="exploring" />
+            <p class="gallery-topic">PHOTODAIRY</p>
+            <h3 class="gallery-heading">A day exploring the Alps</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/running.jpg" alt="running" />
+            <p class="gallery-topic">LIFESTYLE</p>
+            <h3 class="gallery-heading">Top 10 song for running</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/road.jpg" alt="winter" />
+            <p class="gallery-topic">LIFESTYLE</p>
+            <h3 class="gallery-heading">Cold winter days</h3>
+            <p class="gallery-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+        </ul>
+        <button type="button" class="gallery-btn">Load more</button>
+      </section>
+    </main>
+  </body>
 </html>
