@@ -26,12 +26,34 @@ body {
     font-size: 14px;
 }
 
+.container {
+    width: 936px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; */
+    outline: 1px solid red;
+}
+
+.header {
+    padding-top: 71px;
+    padding-bottom: 26px;
+}
+
 .header-link {
     color: var(--nav-link-color);
 }
 
 .header-link.current {
     color: var(--accent-color);
+}
+
+.gallery {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    background-color: aquamarine;
 }
 
 .gallery-topic {
@@ -45,7 +67,12 @@ body {
 }
 
 .gallery-btn {
+    display: block;
     font-family: inherit;
     font-size: 14px;
     color: inherit;
+    padding: 20px 48px;
+    border: 1px solid var(--border-btn-color);
+    margin: 0 auto;
+    margin-top: 90px;
 }
