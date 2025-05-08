@@ -42,6 +42,12 @@ body {
     padding-bottom: 26px;
 }
 
+.header-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
 .header-link {
     color: var(--nav-link-color);
 }
@@ -54,6 +60,18 @@ body {
     padding-top: 66px;
     padding-bottom: 66px;
     background-color: aquamarine;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px 65px;
+    /* column-gap: 65px;
+    row-gap: 130px; */
+}
+
+.gallery-item {
+    width: 420px;
 }
 
 .gallery-topic {
