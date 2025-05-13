@@ -72,15 +72,19 @@ body {
 
 .gallery-item {
     width: 420px;
+    flex-basis: calc((100% - 65px) / 2);
 }
 
 .gallery-topic {
+    margin-top: 32px;
     font-family: var(--second-family);
     font-weight: 300;
     color: var(--heading-color);
 }
 
 .gallery-heading {
+    margin-top: 32px;
+    margin-bottom: 40px;
     font-size: 30px;
 }
 
