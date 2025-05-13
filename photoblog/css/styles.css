@@ -42,10 +42,23 @@ body {
     padding-bottom: 26px;
 }
 
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 150px;
+    font-family: var(--second-family);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px;
+}
+
 .header-list {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
 }
 
 .header-link {
@@ -54,6 +67,13 @@ body {
 
 .header-link.current {
     color: var(--accent-color);
+}
+
+.header-btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    color: inherit;
+    border: 1px solid var(--border-btn-color);
 }
 
 .gallery {
