@@ -31,21 +31,25 @@ body {
 
 .benefits_title, 
 .team_title{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
     text-align: center;
     font-family: var(--third-family);
     font-weight: 400;
     font-size: 24px;
+
     color: #151515;
 }
 
 .benefits_text, .team_heading{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+
     text-align: center;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 30px;
     font-variant: all-small-caps;
+
     color: #151515;
 }
 
@@ -72,7 +76,20 @@ body {
     font-weight: 700;
     font-size: 30px;
     font-variant: all-small-caps;
+
     color: #151515;   
+}
+
+.benefits_text::after,
+.team_heading::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 60px;
+    height: 4px;
+
+    background-color: var(--alert-text-color);
 }
 
 .benefits_list {
@@ -97,3 +114,4 @@ body {
 .team_item {
     flex-basis: calc((100% - 60px) / 3);
 }
+
